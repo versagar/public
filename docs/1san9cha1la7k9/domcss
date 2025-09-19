@@ -1,0 +1,117 @@
+(() => {
+  const unit = 'vmin';
+  const styleTag = document.createElement('style');
+  document.head.appendChild(styleTag);
+
+  const generated = new Set();
+  let css = `:root { --b-unit: 1${unit}; }\n`;
+
+  const rules = {
+    width: /^W(\d+)$/,
+    height: /^H(\d+)$/,
+    padding: /^P(\d+)$/,
+    margin: /^M(\d+)$/,
+    opacity: /^Op(\d+)$/,
+  };
+
+  const staticStyles = {
+    center: `margin-left:auto;margin-right:auto;display:block;text-align:center;`,
+    hidden: `display:none;`,
+    flex: `display:flex;`,
+    'flex-center': `display:flex;justify-content:center;align-items:center;`,
+  };
+
+  // Add dynamic rules
+  function addRule(rule) {
+    if (!generated.has(rule)) {
+      css += rule + '\n';
+      generated.add(rule);
+    }
+  }
+
+  // Process class and inject rule
+  function handleClass(cls) {
+    for (let key in rules) {
+      const match = cls.match(rules[key]);
+      if (match) {
+        const val = match[1];
+        const prop = key === 'opacity' ? `opacity: ${val / 100};` : `${key}: ${val}${unit};`;
+        addRule(`.${cls} { ${prop} }`);
+        return;
+      }
+    }
+    if (staticStyles[cls]) {
+      addRule(`.${cls} { ${staticStyles[cls]} }`);
+    }
+  }
+
+  // Scan all elements and generate CSS
+  function scanClasses() {
+    document.querySelectorAll('*').forEach(el => {
+      el.classList.forEach(handleClass);
+    });
+    styleTag.textContent = css;
+  }
+
+  // Core Utility Functions
+  window.$utils = {
+    on: (selector, event, handler) => {
+      document.querySelectorAll(selector).forEach(el => el.addEventListener(event, handler));
+    },
+    addClass: (selector, cls) => {
+      document.querySelectorAll(selector).forEach(el => el.classList.add(cls));
+    },
+    removeClass: (selector, cls) => {
+      document.querySelectorAll(selector).forEach(el => el.classList.remove(cls));
+    },
+    toggleClass: (selector, cls) => {
+      document.querySelectorAll(selector).forEach(el => el.classList.toggle(cls));
+    },
+    setText: (selector, text) => {
+      document.querySelectorAll(selector).forEach(el => el.textContent = text);
+    },
+    html: (selector, html) => {
+      document.querySelectorAll(selector).forEach(el => el.innerHTML = html);
+    },
+    css: (selector, styleObj) => {
+      document.querySelectorAll(selector).forEach(el => {
+        for (let prop in styleObj) el.style[prop] = styleObj[prop];
+      });
+    },
+    show: (selector) => {
+      document.querySelectorAll(selector).forEach(el => el.style.display = '');
+    },
+    hide: (selector) => {
+      document.querySelectorAll(selector).forEach(el => el.style.display = 'none');
+    },
+    toggle: (selector) => {
+      document.querySelectorAll(selector).forEach(el => {
+        el.style.display = (el.style.display === 'none') ? '' : 'none';
+      });
+    },
+    createModal: (id, content) => {
+      if (document.getElementById(id)) return;
+      const modal = document.createElement('div');
+      modal.id = id;
+      modal.className = 'modal-bg flex-center';
+      modal.innerHTML = `
+        <div class="modal-content P2" style="background:white; border-radius:1vmin; max-width:90%; max-height:90%;">
+          ${content}
+          <button class="close-btn P1 M1">Close</button>
+        </div>`;
+      document.body.appendChild(modal);
+      $utils.on(`#${id} .close-btn`, 'click', () => modal.remove());
+    },
+  };
+
+  // Modal default styles
+  addRule(`.modal-bg { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9999; }`);
+  addRule(`.modal-content { background:white; padding:2vmin; }`);
+
+  // Run generation
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', scanClasses);
+  } else {
+    scanClasses();
+  }
+})();

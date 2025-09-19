@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Bodh: Aeronautics Camp | TWC Classrooms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+     <script src="/1san9cha1la7k9/efahfcfcfabe.js"></script>
+     <script src="/1san9cha1la7k9/dgfbbhhfcfcfabe.js"></script>
+     <script  src="/1san9cha1la7k9/dbhhfcfcfabe.js"></script>
+    <style>
+        /* --- Base CSS Framework --- */
+        :root {
+          --b-unit: 1vmin;
+          --t-unit: 0.5em;
+
+          --rad1: 3vmin;
+          --rad2: 7vmin;
+          --rad3: 1.5vmin; 
+
+          --border-base: 1px;
+          --max-body: 1200px;
+
+          /* --- Professional Color Palette --- */
+          --primary-color: #facc15;   /* Yellow-400 */
+          --secondary-color: #ffffff; /* White */
+          --success-color: #16a34a;   /* Green-600 */
+          --info-color: #4f46e5;      /* Indigo-600 */
+          --dark-color: #111827;      /* Gray-900 */
+          --light-color: #f3f4f6;     /* Gray-100 */
+          --accent-color: #7c3aed;    /* Violet-600 */
+          --blue-color: #6366f1;      /* Indigo-500 */
+          --text-body-color: #374151; /* Gray-700 */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            scrollbar-width: none;
+            line-height: 1.5;
+            font-family: 'Inter', 'Noto Color Emoji', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--light-color); 
+            color: var(--dark-color);
+            overflow-x: hidden;
+        }
+
+        a {color: unset;}
+        .link {opacity: 0.9;}
+        .link:hover {opacity: 1;}
+        .bold {font-weight: 600;}
+        .bolder {font-weight: 800;}
+        
+        /* Typography */
+        .text1 {font-size: calc(2.0 * var(--t-unit));} /* 1rem */
+        .text2 {font-size: calc(2.4 * var(--t-unit));} /* 1.2rem */
+        .text3 {font-size: calc(4.0 * var(--t-unit));} /* 2rem */
+        .text4 {font-size: clamp(2.25rem, 6vw, 3.75rem);}
+
+        .text-info { color: var(--info-color); }
+        .text-body { color: var(--text-body-color); }
+        .text-secondary { color: var(--secondary-color); }
+        .text-dark { color: var(--dark-color); }
+
+        /* Background Colors */
+        .bg-primary { background-color: var(--primary-color);}
+        .bg-secondary { background-color: var(--secondary-color);}
+        .bg-info { background-color: var(--info-color); }
+
+        /* Flexbox Utilities */
+        .flex { display: flex; }
+        .flex-wrap { display: flex; flex-wrap: wrap;}
+        .flex-center { display: flex; justify-content: center; align-items: center; }
+        .flex-space-between { display: flex; justify-content: space-between; }
+        .flex-space-around { display: flex; justify-content: space-around; }
+        .flex-align-stretch { align-items: stretch; }
+        .flex-column { flex-direction: column; }
+        .flex-grow { flex-grow: 1; }
+        
+        .hidden {display: none;}
+        /* --- Component Styles --- */
+        .btn {
+          display: inline-block;
+          cursor: pointer;
+          transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+          padding: 0.75rem 2rem;
+          font-weight: 600;
+        }
+        .btn:hover { transform: translateY(-3px) scale(1.05); }
+        .btn:active { transform: translateY(1px) scale(1); box-shadow: none; }
+
+        .card {
+            background-color: var(--secondary-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, width 0.3s ease-in-out;
+            border-radius: var(--rad3);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        
+        /* Layout & Spacing */
+        .round1 {border-radius: 9999px;} /* Pill shape */
+        .round2 {border-radius: var(--rad1);}
+        .round3 {border-radius: var(--rad3);}
+
+        .container-max-x {max-width: var(--max-body); margin: auto; padding: 0 2rem;}
+        .pad1 {padding: 3rem 1rem;}
+        .pad2 {padding: 1.5rem;}
+        .mar-bottom1 {margin-bottom: 4rem;}
+        .mar-bottom2 {margin-bottom: 1.5rem;}
+        .mar-top1 {margin-top: 4rem;}
+        .mar-top2 {margin-top: 1rem;}
+        .mar-top-auto { margin-top: auto; }
+        
+        .ov-hidden {overflow: hidden;}
+        /* Sizing Utilities */
+        .pw100 { width: 100%; }
+        .pw48 { width: 48%;}
+        .pw31 { width: 31%;}
+
+        /* Position & Display */
+        .rel { position: relative; }
+        .abs { position: absolute; }
+        .center { margin-left: auto; margin-right: auto; }
+        .text-center { text-align: center; }
+        
+        .shadow1 {box-shadow: 0 10px 25px rgba(0,0,0,0.1);}
+
+        /* --- Icon Styles --- */
+        .icon-circle {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+        .icon-circle-indigo { background-color: #e0e7ff; color: var(--info-color); }
+        .icon-circle-green { background-color: #d1fae5; color: var(--success-color); }
+        .icon-circle-yellow { background-color: #fef3c7; color: #ca8a04; }
+
+        /* --- Keyframe Animations --- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInBottom {
+            from { opacity: 0; transform: translate(-50%, 20px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+        .animate-fade-in { animation: fadeIn 1s ease-in-out forwards; opacity: 0; }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.5); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(250, 204, 21, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
+        }
+        @keyframes fly {
+            0% { transform: translate(-10vw, 110vh) rotate(15deg); }
+            100% { transform: translate(110vw, -10vh) rotate(-15deg); }
+        }
+        @keyframes imageFade {
+            0% { opacity: 0; transform: scale(1.1) rotate(-2deg); }
+            17% { opacity: 1; transform: scale(1) rotate(0deg); }
+            33% { opacity: 1; transform: scale(1) rotate(0deg); }
+            50% { opacity: 0; transform: scale(1.05) rotate(2deg); }
+            100% { opacity: 0; }
+        }
+        
+        /* --- Hero Section Styles --- */
+        .hero-container {
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+            background: #000;
+            color: white;
+        }
+        .background-slider .slide {
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-size: cover; background-position: center;
+            opacity: 0; animation: imageFade 18s ease-in-out infinite;
+        }
+        .background-slider .slide:nth-child(2) { animation-delay: 6s; }
+        .background-slider .slide:nth-child(3) { animation-delay: 12s; }
+        .background-overlay {
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); z-index: 1;
+        }
+        .flying-emojis {
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 2;
+        }
+        .emoji {
+            font-size: clamp(2rem, 5vw, 4rem);
+            animation: fly 20s linear infinite; opacity: 0.8;
+        }
+        .emoji:nth-child(2) { animation-delay: 2s; animation-duration: 25s; }
+        .emoji:nth-child(3) { animation-delay: 5s; animation-duration: 18s; }
+        .emoji:nth-child(4) { animation-delay: 8s; animation-duration: 30s; }
+        .emoji:nth-child(5) { animation-delay: 12s; animation-duration: 22s; }
+
+        .hero-content { z-index: 10; padding: 1rem; }
+        .hero-content .text4 { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .dynamic-text-wrapper {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            font-weight: 400;
+            margin-top: 1rem; min-height: 2.2rem;
+            opacity: 0.9;
+        }
+        .cta-button {
+            animation: pulse 2.5s infinite 2s;
+        }
+
+        /* --- List Styles --- */
+        .list-disc { list-style-type: disc; }
+        .list-inside {list-style-position: inside; padding-left: 1rem;}
+
+        /* --- Modern Form Styles --- */
+        .form-input {
+            background-color: var(--secondary-color);
+            border: 2px solid #d1d5db; /* Gray-300 */
+            border-radius: var(--rad3);
+            padding: 0.75rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 1rem;
+            color: var(--dark-color);
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--info-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+        }
+        label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .radio-group { align-items: center; margin-right: 1.5rem; }
+        .radio-group label { margin-left: 0.5rem; font-weight: 400; }
+        
+        /* --- Floating Response Box --- */
+        #respBox {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 500px;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeInBottom 0.5s ease-out forwards;
+        }
+        #closeRespBox {
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #9ca3af;
+        }
+        #closeRespBox:hover {
+            color: var(--dark-color);
+        }
+
+
+        /* --- Responsive Adjustments --- */
+        /* Tablet view */
+        @media (max-width: 1024px) {
+            .pw31 {
+                width: 48%; 
+                margin-bottom: 2rem;
+            }
+        }
+        /* Mobile view */
+        @media (max-width: 768px) {
+            .pw31, .pw48 {
+                width: 100%; 
+                margin-bottom: 1.5rem;
+            }
+            .pw-resp-md {
+                margin-bottom: 1.5rem;
+            }
+            .pw-resp-md:last-child {
+                margin-bottom: 0;
+            }
+            .flex-resp-col { flex-direction: column; }
+            .radio-group { margin-bottom: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-container rel flex flex-center">
+        <div class="background-slider abs">
+            <div class="slide abs" style="background-image: url('https://images.unsplash.com/photo-1541185934-01b224186ab8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920');"></div>
+            <div class="slide abs" style="background-image: url('https://images.unsplash.com/photo-1542296332-9e54365330de?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920');"></div>
+            <div class="slide abs" style="background-image: url('https://images.unsplash.com/photo-1614726353123-9b8c2b09f1a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1920');"></div>
+        </div>
+        <div class="background-overlay abs"></div>
+        <div class="flying-emojis abs">
+            <div class="emoji abs" style="top: 20%; left: -10%;">✈️</div>
+            <div class="emoji abs" style="top: 60%; left: -20%;">🚀</div>
+            <div class="emoji abs" style="top: 40%; left: -5%;">🛰️</div>
+            <div class="emoji abs" style="top: 80%; left: -15%;">🚁</div>
+            <div class="emoji abs" style="top: 10%; left: -30%;">🛸</div>
+        </div>
+        <div class="hero-content rel animate-fade-in">
+            <h1 class="text4 bolder">Pawan Bodh: Aeronautics Camp</h1>
+            <div class="dynamic-text-wrapper">
+                <span id="dynamic-text"></span>
+            </div>
+            <a href="#enrollment-form" class="cta-button btn bg-primary text-dark round1 text1 shadow1 mar-top2">
+                Enroll Now
+            </a>
+        </div>
+    </header>
+
+    <main class="container-max-x pad1">
+        <section class="text-center mar-bottom1">
+            <h2 class="text3 bolder mar-bottom2">Ready for Take-off? 🚀</h2>
+            <p class="text1 text-body center" style="max-width: 800px;">
+                Join us for an exciting <strong>5-day online camp</strong> where children will explore the science of flight—from simple paper planes to cutting-edge drones! Let their imagination soar to new heights.
+            </p>
+        </section>
+
+        <section class="flex flex-wrap flex-space-around mar-bottom1 animate-fade-in" style="animation-delay: 0.2s;">
+            <div class="card pad2 pw31">
+                <div class="flex" style="align-items: center; margin-bottom: 1rem;">
+                    <div class="icon-circle icon-circle-indigo flex flex-center">👩‍🏫</div>
+                    <h3 class="text2 bold">Expert-Led Flight</h3>
+                </div>
+                <ul class="list-disc list-inside text1 text-body" style="line-height: 1.75;">
+                    <li><strong>Sagar Verma</strong> – Expert Physics & Robotics Trainer</li>
+                    <li><strong>Aashutosh Pandey</strong> – Aeronautical Engineer with internship experience at Hindustan Aeronautics Limited (HAL)</li>
+                </ul>
+            </div>
+
+            <div class="card pad2 pw31">
+                <div class="flex" style="align-items: center; margin-bottom: 1rem;">
+                    <div class="icon-circle icon-circle-green flex flex-center">🔧</div>
+                    <h3 class="text2 bold">What They'll Discover</h3>
+                </div>
+                <ul class="list-disc list-inside text1 text-body" style="line-height: 1.75;">
+                    <li>The hidden <strong>magic of air</strong> and aerodynamics</li>
+                    <li>From paper planes to real aircraft concepts</li>
+                    <li>The exciting world of <strong>drone technology</strong></li>
+                    <li>Shapes and designs of flying vehicles</li>
+                    <li>...and much more!</li>
+                </ul>
+            </div>
+
+            <div class="card pad2 pw31">
+                <div class="flex" style="align-items: center; margin-bottom: 1rem;">
+                    <div class="icon-circle icon-circle-yellow flex flex-center">🗓️</div>
+                    <h3 class="text2 bold">Essential Camp Details</h3>
+                </div>
+                <div class="text1 text-body" style="line-height: 1.75;">
+                    <p class="flex" style="align-items: center; margin-bottom: 0.5rem;">
+                        <span style="font-size: 1.5rem; margin-right: 0.5rem;">📅</span>
+                        <span class="bold">Duration:</span> 5 Days
+                    </p>
+                    <p class="flex" style="align-items: center; margin-bottom: 0.5rem;">
+                        <span style="font-size: 1.5rem; margin-right: 0.5rem;">💻</span>
+                        <span class="bold">Mode:</span> Online
+                    </p>
+                    <p class="flex" style="align-items: flex-start;">
+                        <span style="font-size: 1.5rem; margin-right: 0.5rem;">👶</span>
+                        <div>
+                            <span class="bold">Age Groups:</span>
+                            <ul class="list-disc list-inside">
+                                <li>6–10 years</li>
+                                <li>11–15 years</li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pad1 round3 animate-fade-in" style="background-color: #eef2ff; animation-delay: 0.3s;">
+            <h2 class="text3 bolder text-center mar-bottom2 text-info">Two Age Groups, Two Adventures</h2>
+            <div class="flex flex-wrap flex-space-around flex-align-stretch">
+                <div class="card pad2 pw48 pw-resp-md flex flex-column">
+                    <h3 class="text2 bold mar-bottom2 text-info">Junior Flyers <span class="text1" style="font-weight: 400; color: #4b5563;">(Ages 6-10)</span></h3>
+                    <p class="text1 text-body">
+                        A fun, imaginative introduction to the world of flight. Kids will learn basic principles like lift and drag while building simple flying objects.
+                    </p>
+                    <a href="#enrollment-form" class="bold text-info link mar-top-auto">
+                        Learn more & enroll &rarr;
+                    </a>
+                </div>
+                <div class="card pad2 pw48 pw-resp-md flex flex-column">
+                    <h3 class="text2 bold mar-bottom2 text-info">Aero-Innovators <span class="text1" style="font-weight: 400; color: #4b5563;">(Ages 11-15)</span></h3>
+                    <p class="text1 text-body">
+                        An advanced journey into the physics of flight, including rocket propulsion, drone technology, and fluid dynamics.
+                    </p>
+                    <a href="#enrollment-form" class="bold text-info link mar-top-auto">
+                        Learn more & enroll &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+         
+        <section id="enrollment-form" class="mar-top1 pad1 round3 animate-fade-in" style="background-color: #e5e7eb; animation-delay: 0.4s;">
+            <h2 class="text3 bolder text-center mar-bottom2 text-info">Enroll in Aeronautics Camp</h2>
+            <form class="center card pad2" style="max-width: 800px;" action="#" method="POST">
+                <div class="flex flex-wrap flex-space-between">
+                    <div class="pw48 pw-resp-md mar-bottom2 hidden">
+                        <label for="Timestamp">Timestamp</label>
+                        <input type="text" name="Timestamp" class="pw100 form-input" autocomplete="off">
+                    </div>
+                    <div class="pw100 pw-resp-md mar-bottom2">
+                        <label for="student-name">Event Name</label>
+                        <input type="text" name="eventName" class="pw100 form-input" value="Pawan Bodh Camp 2025" autocomplete="off" readonly>
+                    </div>
+                        <input type="text" name="hp_field" style="display:none;" tabindex="-1" autocomplete="off" />
+
+                    <div class="pw48 pw-resp-md mar-bottom2">
+                        <label for="student-name">Student's Full Name</label>
+                        <input type="text" id="student-name" name="student-name" required class="pw100 form-input">
+                    </div>
+                    <div class="pw48 pw-resp-md mar-bottom2">
+                        <label for="guardian-name">Guardian's Full Name</label>
+                        <input type="text" id="guardian-name" name="guardian-name" required class="pw100 form-input">
+                    </div>
+                    <div class="pw100 mar-bottom2">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required class="pw100 form-input">
+                    </div>
+                    <div class="pw48 pw-resp-md mar-bottom2">
+                        <label for="contact-number">Contact Number</label>
+                        <input type="tel" id="contact-number" name="contact-number" required class="pw100 form-input">
+                    </div>
+                    <div class="pw48 pw-resp-md mar-bottom2">
+                        <label for="dob">Student's Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required class="pw100 form-input">
+                    </div>
+                     <div class="pw100 mar-bottom2">
+                        <label for="address">Full Address</label>
+                        <textarea id="address" name="address" rows="3" required class="pw100 form-input"></textarea>
+                    </div>
+                    <div class="pw100 mar-bottom2">
+                        <label>Select Age Group</label>
+                        <div class="flex flex-wrap mar-top2">
+                            <div class="flex radio-group">
+                                <input id="group1" name="age-group" type="radio" value="6-10" required>
+                                <label for="group1">Junior Flyers (6-10)</label>
+                            </div>
+                            <div class="flex radio-group">
+                                <input id="group2" name="age-group" type="radio" value="11-15">
+                                <label for="group2">Aero-Innovators (11-15)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pw100">
+                        <label for="other-info">Something else<span style="font-weight: 400; color: #6b7280;">(e.g., expectations)</span></label>
+                        <textarea id="other-info" name="other-info" rows="3" class="pw100 form-input" placeholder="Other information, comment, feedback, availability, time change request, expectations, etc."></textarea>
+                    </div>
+                </div>
+                <div class="mar-top1 text-center">
+                    <button type="submit" class="btn bg-info text-secondary round1 text1 shadow1">
+                        Submit Application
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <section id="respBox" class="pad2 round3 rel hidden" style="background-color: var(--secondary-color);">
+        <button id="closeRespBox" title="Close">&times;</button>
+        <div id="respText" class="text-center text1 bold"></div>
+        <div class="text-center center pad1 animate-fade-in hidden" id="successMessage" style="max-width: 800px; background-color: #f0fdf4; border: 2px solid #bbf7d0; border-radius: 1.5vmin;">
+            <div style="font-size: 4rem; margin-bottom: 1rem;">🎉</div>
+            <h3 class="text3 bold mar-bottom2" style="color: #166534;">Enrollment Successful!</h3>
+            <p class="text1" style="color: #1f2937;">Thank you for registering! We've received your application and will be in touch within 48 hours.</p>
+            <p class="mar-top2" style="color: #4b5563;">Get ready for an adventure into the skies! 🚀</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-secondary pad1 text-center" style="border-top-left-radius: var(--rad1); border-top-right-radius: var(--rad1); margin-top: 4rem;">
+        <p>TWC Classrooms &copy; 2025. All rights reserved.</p>
+    </footer>
+
+    
+
+<script src="/events/pawanbodh/js/page.js"></script>
+</body>
+</html>

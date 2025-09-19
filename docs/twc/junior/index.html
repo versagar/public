@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWC Robotics Presentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            transition: background-color 0.3s ease;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.8s ease-in-out;
+            min-height: 500px;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .slide-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="p-4 flex items-center justify-center min-h-screen">
+
+    <div class="max-w-4xl w-full bg-white rounded-xl shadow-2xl p-8 md:p-12 transition-all duration-300">
+        <!-- Slide Container -->
+        <div id="slide-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img class="slide-image" src="page1img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-blue-800 mb-4">Welcome to TWC Classrooms</h1>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-700 mb-6">Mechanical Robotics for Ages 4-6</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-4">Hello, and thank you for showing you interest in TWC Classrooms. My name is Sagar Verma, and I am excited to share the details with you about a new and unique learning opportunity we're offering: our Mechanical Robotics class for children aged 4 to 6.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img class="slide-image" src="page2img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">What is Mechanical Robotics?</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-4">For this age group, our focus is on the <strong>'mechanical'</strong> part. This isn't about computer coding or complex programming. Instead, it's about helping children understand how things move and work in the physical world.</p>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Key Concepts:</h3>
+                        <ul class="list-disc list-inside space-y-2 text-lg text-gray-600">
+                            <li><strong>Gears:</strong> How they turn and make things move.</li>
+                            <li><strong>Levers:</strong> How they can lift heavy objects.</li>
+                            <li><strong>Wheels and Axles:</strong> How they create motion.</li>
+                            <li><strong>Pulleys:</strong> How they make it easier to pull things up.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img class="slide-image" src="page3img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Our Tool of Choice: Makerzoid</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-4">We've chosen Makerzoid as our primary teaching tool for a few important reasons:</p>
+                    <div class="mt-8 grid gap-6 md:grid-cols-3">
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-xl text-blue-800">Familiarity</h4>
+                            <p class="text-gray-600">Most children already know and love Makerzoid, which makes the learning environment comfortable and fun.</p>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-xl text-blue-800">Hands-On</h4>
+                            <p class="text-gray-600">There’s no better way to learn than by physically building, touching, and experimenting.</p>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h4 class="font-bold text-xl text-blue-800">Sparks Creativity</h4>
+                            <p class="text-gray-600">There's no single "right" way to build. We encourage creative problem-solving and innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img class="slide-image" src="page4img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Key Skills Your Child Will Develop</h2>
+                    <ul class="list-disc list-inside space-y-4 text-lg text-gray-600">
+                        <li><strong>Early STEM Concepts:</strong> Introduction to the basics of science, technology, engineering, and math.</li>
+                        <li><strong>Fine Motor Skills:</strong> Development of hand-eye coordination and dexterity.</li>
+                        <li><strong>Problem-Solving:</strong> Learning to troubleshoot, think critically, and find creative solutions.</li>
+                        <li><strong>Teamwork and Communication:</strong> In batch classes, children learn to collaborate, share ideas, and communicate their designs.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide">
+                <img class="slide-image" src="page5img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Our Flexible Learning Options</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-4">We understand that every family has different needs, which is why we offer multiple ways to take this class:</p>
+                    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mt-8">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold text-xl text-gray-800">Offline Classes</h4>
+                            <p class="text-gray-600 text-sm">Traditional, in-person classes.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold text-xl text-gray-800">Online Classes</h4>
+                            <p class="text-gray-600 text-sm">Highly interactive virtual sessions.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold text-xl text-gray-800">One-on-One</h4>
+                            <p class="text-gray-600 text-sm">Personalized, tailored learning.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold text-xl text-gray-800">Batch Classes</h4>
+                            <p class="text-gray-600 text-sm">Small group sessions for collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide">
+                <img class="slide-image" src="page6img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Our Play-Based Approach</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-4">Our curriculum is designed around one simple principle: <strong>children learn best when they are playing.</strong> Each class is a fun challenge or an engaging story, not a lecture. The entire process is about discovery and having fun, not about memorizing facts.</p>
+                </div>
+            </div>
+
+            <!-- Slide 7: Levers & Pulleys -->
+            <div class="slide">
+                <img class="slide-image" src="page7img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Lesson Plan: Levers & Pulleys</h2>
+                    <ul class="list-disc list-inside space-y-4 text-lg text-gray-600">
+                        <li><strong>The Makerzoid See-Saw:</strong> Learn about <strong>levers</strong> and balance by building a working seesaw.</li>
+                        <li><strong>The Mighty Crane:</strong> Use a <strong>pulley</strong> and a <strong>lever</strong> to build a crane and lift small objects.</li>
+                        <li><strong>The Makerzoid Catapult:</strong> Discover stored energy and the power of a <strong>lever</strong> in a fun, dynamic way.</li>
+                        <li><strong>The Wrecking Ball:</strong> Build a structure with a wrecking ball attached to a <strong>pulley</strong> system.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 8: Wheels & Axles -->
+            <div class="slide">
+                <img class="slide-image" src="page8img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Lesson Plan: Wheels & Axles</h2>
+                    <ul class="list-disc list-inside space-y-4 text-lg text-gray-600">
+                        <li><strong>The Makerzoid Race Car:</strong> Design a car and learn about <strong>wheels</strong> and <strong>axles</strong> for smooth rolling.</li>
+                        <li><strong>The Shopping Cart:</strong> Understand how <strong>wheels</strong> and <strong>axles</strong> support weight and allow easy movement.</li>
+                        <li><strong>The Makerzoid Tractor:</strong> Explore how different <strong>wheel</strong> sizes affect movement and speed.</li>
+                        <li><strong>The Rolling Monster:</strong> Learn that more <strong>wheels</strong> can provide stability.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 9: Gears -->
+            <div class="slide">
+                <img class="slide-image" src="page9img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Lesson Plan: Gears</h2>
+                    <ul class="list-disc list-inside space-y-4 text-lg text-gray-600">
+                        <li><strong>The Spinning Robot:</strong> Use a series of <strong>gears</strong> to make a robot's arms spin.</li>
+                        <li><strong>The Mixer:</strong> See how <strong>gears</strong> can change the direction of motion.</li>
+                        <li><strong>The Gearbox:</strong> Learn that you can change the speed of rotation with different-sized <strong>gears</strong>.</li>
+                        <li><strong>The Clock:</strong> Visualize how <strong>gears</strong> work together in a sequence to make the hands move.</li>
+                        <li><strong>The Ferris Wheel:</strong> Observe how a large <strong>gear</strong> can power a slow, steady rotation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 10: Structures & Building -->
+            <div class="slide">
+                <img class="slide-image" src="page10img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Lesson Plan: Structures & Building</h2>
+                    <ul class="list-disc list-inside space-y-4 text-lg text-gray-600">
+                        <li><strong>The Makerzoid Tower:</strong> Learn about structural stability and the importance of a wide base.</li>
+                        <li><strong>The Strong Bridge:</strong> Test how a bridge can support weight and learn about support structures.</li>
+                        <li><strong>The Archway:</strong> Discover how curved structures can distribute weight and be very strong.</li>
+                        <li><strong>The Makerzoid House:</strong> Understand how walls, roofs, and foundations work together.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 11: Combining Multiple Concepts -->
+            <div class="slide">
+                <img class="slide-image" src="page11img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Lesson Plan: Combining Concepts</h2>
+                    <ul class="list-disc list-inside space-y-4 text-lg text-gray-600">
+                        <li><strong>The Hungry Alligator:</strong> Combines a <strong>lever</strong> to open the mouth and <strong>gears</strong> to make the motion smoother.</li>
+                        <li><strong>The Motorized Car:</strong> Uses <strong>gears</strong> to transfer power from an axle to the <strong>wheels</strong>.</li>
+                        <li><strong>The Robotic Hand:</strong> Uses a series of <strong>levers</strong> and strings to create a hand that can open and close.</li>
+                        <li><strong>The Makerzoid Windmill:</strong> Uses <strong>gears</strong> to transfer the turning motion of the blades.</li>
+                        <li><strong>The Playground:</strong> A larger project where they can build a playground with multiple simple machines.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 12 -->
+            <div class="slide">
+                <img class="slide-image" src="page12img.webp" alt="Image for the slide">
+                <div class="slide-content">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 mb-6">Thank You & Questions</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-4">Our goal is to empower your children to become confident, creative, and curious learners. We're excited about the opportunity to build with them!</p>
+                    <p class="text-lg text-gray-600 font-bold">I'd be happy to answer any questions you might have.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons and Actions -->
+        <div class="flex justify-between items-center mt-8">
+            <button id="prev-btn" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-bold text-lg hover:bg-gray-300 transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+                Previous
+            </button>
+            <span id="slide-number" class="text-xl font-bold text-gray-600">1 of 12</span>
+            <button id="next-btn" class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-lg hover:bg-blue-700 transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+                Next
+            </button>
+        </div>
+        
+    </div>
+
+    
+<script src="js/index.js"></script>
+</body>
+</html>

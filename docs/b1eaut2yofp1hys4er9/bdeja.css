@@ -1,0 +1,19 @@
+@media only screen and (max-width: 620px){
+ 
+  #rTgp {
+    overflow: none;
+    scrollbar-width: 0;
+}
+
+.c3, .c8, .c4, .c6, .c2, .c5, .c9 {
+  line-height: 1;
+}
+.rowxp  {
+  display: block;
+}
+#odinUpdate {
+  height: calc(120% - 5vw);
+}
+
+
+}

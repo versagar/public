@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    font-weight: 900;
+
+}
+
+#pNav {
+    display: block;
+    font-size: 4vmin;
+}
+#pLogo {
+   aspect-ratio: 1;
+}
+#proTitle {
+    margin-left: 2vmin; 
+    font-weight: 700;
+    font-size: 6vmin;
+}
+#profileBody {
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10vmin;
+    margin: auto;
+    overflow: scroll;
+}
+.ttmenubtn.pnbtn {
+    float: right;
+    margin-right: 2vmin;
+    line-height: 1.5;
+}

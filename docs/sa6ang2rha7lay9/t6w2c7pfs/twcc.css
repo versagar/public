@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+/* #twch1 a {
+    color: transparent;
+} */
+#wbody, #twcFeed {
+    background-color: antiquewhite;
+}
+#twcFeed {
+    z-index: -1;
+}
+#twcLogo {
+    display: block;
+    position: absolute;
+    top: 0.5vmin;
+    left: 0;
+    margin: 0;
+    width: 11vmin;
+    aspect-ratio: 1;
+}
+
+#twch1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8vmin;
+    text-shadow: 1vmin 1vmin 10px green;
+    /* background-image: url(water.jpg);
+        background-clip: text;
+        background-size: cover;
+        -webkit-text-stroke: 0.05vmin white; */
+}
+#twcmenubtn {
+    display: block;
+    position: absolute;
+    right: 2vmin;
+    height: 7vmin;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background-color: antiquewhite;
+    box-shadow: 0.5vmin 0.5vmin gray; 
+}
+#twcmenubtn:active {
+box-shadow: none;
+right: 1.5vmin;
+}
+#tmbtn {
+    width: 100%;
+    height: 100%;
+}
+#twcmenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 50vmin;
+    top: 10vmin;
+    right: 2vmin;
+    height: 75%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    direction: rtl;
+    border-left: 1vmin solid gray;
+    border-right: 1vmin solid antiquewhite;
+    outline: 1vmin solid #6C2E00;
+}
+#twcmenu::-webkit-scrollbar {
+    width: auto;
+    background-color: transparent;
+}
+#twcmenu::-webkit-scrollbar-thumb {
+    display: block;
+    width: 1vmin;
+    border: 0.5vmin solid antiquewhite;
+    border-radius: 10px;
+    background-color: #6C2E00;
+}
+#twcmenu a {
+    display: block;
+    color: antiquewhite;
+    text-align: left;
+    font-size: 5vmin;
+    width: 100%;
+    margin-top: 1vmin;
+    padding-left: 1vmin;
+    border-bottom: 1vmin solid #6C2E00;
+    background-color: gray;
+    font-weight: 900;
+    overflow-wrap: normal;
+}
+#ttmContainer{
+    display: none;
+    position: fixed;
+    top: 6vmin;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5vmin;
+    width: 40vmin;
+    z-index: 1;
+}
+.ttbody {
+    display: block;
+    width: 100%;
+}
+
+.ttframe {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow-wrap: normal;
+}
+
+.flex-we {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.fix {
+    position: fixed;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.back {
+    z-index: 0;
+}
+#ttmBtn {
+    height: 100%;
+}
+#twctBack {
+    float: right;
+}
+.tthcenter {
+    display: block;
+    color: black;
+    margin: auto;
+    width: max-content;
+}
+#ttHead {
+   display: block;
+   float: left;
+   min-width: 45vmin;
+    font-size: 4vmin;
+    line-height: 5vmin;
+    min-height: 5vmin;
+    background-color: white;
+    box-shadow: 1vmin 1vmin 5px black;
+    border-bottom: 1vmin solid #6C2E00;
+    text-align: center;
+
+}
+#ttmContainer a  {
+    display: block;
+    width: 100%;
+    color: #6C2E00;
+    background-color: rgba(250, 235, 215, 0.801);
+    font-size: 3vmin;
+    padding-left: 2vmin;
+    line-height: 5vmin;
+    margin-top: 0.5vmin;
+    border-bottom: 0.75vmin solid white;
+    box-shadow: 0 -0.3vmin 2px gray;
+    font-weight: 900;
+    transition: ease-in 1s;
+}
+.twctopic {
+    display: block;
+    position: relative;
+    margin: 1.1vmin;
+    margin-bottom: 4vmin;
+    width: 30vmin;
+    font-size: 3vmin;
+    aspect-ratio: 1;
+    border: 0.1vmin solid #6C2E00;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+.twctopicpre {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.twctopicpre img {
+    width: 100%;
+}
+.twctopicsub {
+    display: flex;
+    position: absolute;
+    min-height: 9vmin;
+    bottom: 0;
+    background-color: rgba(250, 235, 215, 0.562);
+    color: #6C2E00;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.ttgsidbox, .ttgdidbox {
+    position: relative;
+        display: block;
+        width: 100vw;
+        max-width: calc(100vh*4/3);
+        max-height: 90%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    margin: auto;
+    padding: 0;
+}
+.abs {
+    position: absolute;
+}
+.gslidestrip {
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #6c2e00;
+}
+.ttgsidframe, .ttgdidFrame {
+    height: 100%;
+    width: 100%;
+}
+
+.ttgdidbox {
+    display: none;
+}
+#twcloaderGif {
+    background-color: #6C2E00;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../../loader.gif) center center no-repeat;
+}
+#twctBack {
+    display: block;
+    position: absolute;
+    top: 14vmin;
+    right: 0;
+}
+
+
+@media (max-width: 284px) {
+            .gslidestrip {
+                height: 70px;
+            }
+
+  } 

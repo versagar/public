@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TWC Classrooms</title>
+    <link rel="icon" href=/sa6ang2rha7lay9/1tas2wee1r4sang9/dchdjbbci.webp type="icon/logo" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="/1san9cha1la7k9/efahfcfcfabe.js"></script>
+  <script src="/1san9cha1la7k9/dgfbbhhfcfcfabe.js"></script>
+  <script  src="/1san9cha1la7k9/dbhhfcfcfabe.js"></script>
+  <link rel="stylesheet" href="/sa6ang2rha7lay9\t6w2c7pfs\twcc.css">
+    <link rel="stylesheet" href="/b1eaut2yofp1hys4er9/lib.css">
+    <link rel="stylesheet" href="/b1eaut2yofp1hys4er9/tempresp.css">
+    
+    <style>
+        /* All custom styles consolidated here to avoid conflicts */
+        @keyframes subtle-move {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .hero-background {
+            background-size: 400% 400%;
+            animation: subtle-move 15s ease infinite;
+            background-color: var(--light-color);
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .circle-deco {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            z-index: 0;
+            filter: blur(20px);
+        }
+
+        .card {
+            background: var(--bg-light);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            padding: 2rem;
+            flex: 1 1 45%;
+            max-width: 500px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            transform: scale(1.05);
+        }
+
+        .card .icon {
+            font-size: 4em;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .card:hover .icon {
+            animation: bounce 0.6s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .twc-btn {
+            background-color: var(--success-color);
+            color: var(--secondary-color);
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: var(--rad1);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color var(--transition);
+            display: inline-block;
+            margin: 0.5rem auto;
+        }
+
+        .twc-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--dark-color);
+        }
+
+        .twc-card {
+            background-color: var(--light-color);
+            padding: 2rem;
+            border-radius: var(--rad1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .twc-animated {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .twc-animated.twc-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            padding: 0.8rem;
+            border: 1px solid var(--accent-color);
+            border-radius: var(--rad1);
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: var(--success-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .popup-flag {
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: var(--secondary-color);
+            border: 5px solid var(--accent-color);
+            border-radius: var(--rad1);
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            z-index: 9999;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .popup-flag.show {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .popup-flag img {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .twc-split {
+                display: flex;
+                gap: 2rem;
+            }
+
+            .twc-split .twc-card {
+                flex: 1;
+            }
+        }
+
+         @media (max-width: 768px) {
+            .flex-responsive {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                padding-top: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="twcFeed" class="feed ov-auto">
+        <div class="ttbody ov-auto" id="ttBody">
+
+            <div>
+
+                <!-- This is the new content you wanted to add -->
+                <div id="flagPopup" class="popup-flag">
+                    <!-- <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Indian Flag" /> -->
+                    <h3>Welcome!</h3>
+                    <p>Let's enjoy learning with freedom!</p>
+                </div>
+
+                <header class="hero-background text-secondary pad1 rel ov-hidden rad2011">
+                    <div class="circle-deco w-100 ht100" style="top: 0; left: 25%; width: 12rem; height: 12rem; animation: pulse 2s infinite;"></div>
+                    <div class="circle-deco w-100 ht100" style="bottom: 0; right: 25%; width: 8rem; height: 8rem; animation: pulse 2s infinite;"></div>
+
+                    <div class="center text-center rel text-success bg-light pad1 round2">
+                        <p class="text2 line1-5 mar1">Hands-On Learning, Endless Fun.</p>
+                        <a href="#courses" class="btn bg-secondary text-primary bold pad2 round2 shadow2 hov-focus transform-scale mar1">Overview of Courses</a>
+                    </div>
+                </header>
+
+ <div class="bg-info container-max-x flex flex-wrap flex-center flex-responsive pad2 mar1 gap-2rem shadow2 round2">
+          <div class="round2 flex-column-center" style="flex: 1 1 45%;">
+              <object data="/events/pawanbodh/campvid1.html" type="" width="100%" class="ratio1609 block pw100 round2"></object>
+          </div>
+
+          <div class="flex-column-center pad1" style="flex: 1 1 45%;">
+                 <h2 class="text-accent bold text4 mart3 blink01-1500-infinite"><a href="/events/pawanbodh/" target="_top">&RightArrowBar; Pawan Bodh Camp 2025</a></h2>
+          <p class="uipara text-dark">Get ready for a hands-on learning experience! This 5-day online camp for ages 6 to 15 will take you on an exciting journey into the world of aeronautics with expert teachers. Learn the principles of flight, build models, and launch your imagination!</p>
+          <div class="flex-column-center mart2">
+              <a href="/events/pawanbodh/" class="btn bg-primary text-secondary pad3 round3 shadow2 mar2" target="_top">Learn More!</a>
+              <p class="text-dark">For more details or to schedule a call:</p>
+              <a class="btn bg-primary text-secondary pad3 round3 shadow2 mar2" href="tel:+917366006527">Call Us</a>
+          </div>
+          </div>
+         
+      </div>
+
+
+                <section class="twc-container twc-animated col2 mar1">
+                    <h2>Explore. Think. Build. Succeed.</h2>
+                    <div class="twc-card">
+                        <p>
+                            In today’s fast-changing world, skills like logical thinking, creativity, and problem-solving are more important than ever.
+                            At TWC Classrooms, we offer engaging, hands-on courses in STEM education—covering Robotics, Coding & Programming, Electronics, Science and Mathematics, AI and IT.
+                        </p>
+
+                    </div>
+                </section>
+
+                <section class="twc-container twc-animated col2 mar1">
+                    <h2>Why Choose TWC?</h2>
+                    <div class="twc-card">
+                        <ul>
+                            <li>✅ 100% Online & Offline Hybrid Classes</li>
+                            <li>🕐 Flexible Timings and Custom Schedules</li>
+                            <li>👥 Group or One-on-One Format</li>
+                            <li>🔧 Hands-on Learning with Real Kits</li>
+                            <li>🎓 Certified Instructors with Deep Expertise</li>
+                            <li>🏆 Engaging Projects and Competitions</li>
+                            <li>🧠 Inclusive & Neurodiverse-Friendly Environment</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="twc-container twc-split twc-animated">
+                    <div class="twc-card">
+                        <h2>Courses Offered</h2>
+                        <ul>
+                            <li>🤖 Robotics & Mechanical Models</li>
+                            <li>💻 Coding & Programming</li>
+                            <li>🔌 Electronics & Circuits</li>
+                            <li>🧪 Science Projects</li>
+                            <li>🧠 Math Enrichment</li>
+                            <li>💡 Computer Literacy & IT Tools</li>
+                            <li>🖥️ Windows & Linux Fundamentals</li>
+                        </ul>
+                    </div>
+
+                    <div class="twc-card">
+                        <h2>For Every Learner</h2>
+                        <ul>
+                            <li>📚 Custom Curriculum for All Learning Levels</li>
+                            <li>🎯 Goal-Based Lesson Planning</li>
+                            <li>📊 Detailed Progress Reports for Parents</li>
+                            <li>📈 Timely Rubrics and Feedback</li>
+                            <li>🧑‍🏫 Dedicated Support for Neurodiverse Students</li>
+                            <li>👩‍🏫 Inclusive Classrooms with Patient Tutors</li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="text-center"><button class="twc-btn mar1 center" onclick="loadIn('wbody','/sa6ang2rha7lay9/t6w2c7pfs/join.html')">Join TWC</button></div>
+
+                <main class="container-max-x center pad1">
+                    <section id="courses" class="mar1 fade-in-section">
+                        <h2 class="text3 bolder text-dark text-center mar1">Our Courses</h2>
+
+                        <div class="grid-container">
+                            <div class="card">
+                                <div class="icon text-blue">🤖</div>
+                                <h3 class="text3 bolder text-center mar2">Robotics</h3>
+                                <p class="text2 text-dark text-center">Build, program, and innovate with our hands-on robotics courses.</p>
+                            </div>
+                            <div class="card">
+                                <div class="icon text-primary">💻</div>
+                                <h3 class="text3 bolder text-center mar2">Coding & Programming</h3>
+                                <p class="text2 text-dark text-center">From block-based to Python, master the language of the future.</p>
+                            </div>
+                            <div class="card">
+                                <div class="icon text-success">🧑‍💻</div>
+                                <h3 class="text3 bolder text-center mar2">IT & Computer Science</h3>
+                                <p class="text2 text-dark text-center">Learn computer basics, cybersecurity, and networking essentials.</p>
+                            </div>
+                            <div class="card">
+                                <div class="icon text-danger">🔌</div>
+                                <h3 class="text3 bolder text-center mar2">Electronics</h3>
+                                <p class="text2 text-dark text-center">Discover the magic of circuits and create your own electronic projects.</p>
+                            </div>
+                            <div class="card">
+                                <div class="icon text-success">🧪</div>
+                                <h3 class="text3 bolder text-center mar2">Science</h3>
+                                <p class="text2 text-dark text-center">Engage in fun experiments and explore the wonders of the natural world.</p>
+                            </div>
+                            <div class="card">
+                                <div class="icon text-warning">🔢</div>
+                                <h3 class="text3 bolder text-center mar2">Math</h3>
+                                <p class="text2 text-dark text-center">Develop strong problem-solving skills with logical and creative math lessons.</p>
+                            </div>
+                        </div>
+
+                                  
+                            
+                        </div>
+                    </section>
+<div style="text-align: center;">
+                            <button class="twc-btn" onclick="loadIn('wbody','/sa6ang2rha7lay9/t6w2c7pfs/courses.html')">Courses Details</button></div>
+                    <section class="mar1 fade-in-section">
+                        <h2 class="text3 bolder text-center mar1">Our Philosophy</h2>
+                        <div class="container-max-x center text-center">
+                            <p class="text2 text-dark mar2">
+                                At TWC Classrooms, we believe in learning through doing. Our curriculum is designed to be highly interactive and fun, helping children of all ages build a strong foundation in STEM subjects.
+                            </p>
+                            <p class="text2 text-dark">
+                                We empower students to become problem-solvers, innovators, and creators, preparing them for a future driven by technology.
+                            </p>
+                        </div>
+                    </section>
+       <section class="twc-container twc-animated" id="contact">
+                    <h2 id="formResp">Request a Callback</h2>
+                    <form id="callbackForm">
+                        <input type="text" name="name" placeholder="Your Name" required />
+                        <input type="tel" name="tel" placeholder="Mobile Number" required />
+                        <input type="text" name="availability" placeholder="Preferred Time (e.g. Weekends, Evenings)" />
+                        <input type="text" name="hp_field" style="display: none;" autocomplete="off" tabindex="-1">
+                        <button type="submit" class="twc-btn">Get a Callback</button>
+                    </form>
+                </section>
+                
+
+                </main>
+<footer class="bg-dark text-light pad2 text-center rad1100">
+                    <div class="vw100 center">
+                        <p class="text2">&copy; 2025 TWC Classrooms. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+      
+  <script src="/sa6ang2rha7lay9/t6w2c7pfs/js/hometwc.js"></script>
+</body>
+
+</html>

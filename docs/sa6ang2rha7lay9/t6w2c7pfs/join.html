@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form</title>
+  <link rel="stylesheet" href="/b1eaut2yofp1hys4er9/lib.css">
+  <link rel="stylesheet" href="/b1eaut2yofp1hys4er9/tempresp.css">
+   <script src="/1san9cha1la7k9/efahfcfcfabe.js"></script>
+  <script src="/1san9cha1la7k9/dgfbbhhfcfcfabe.js"></script>
+  <script  src="/1san9cha1la7k9/dbhhfcfcfabe.js"></script>
+</head>
+<body class="bg-secondary">
+<style>
+  #formTimeZone {
+    z-index: 1000;
+    margin: auto;
+  }
+#timezoneListForm{
+   max-height: 400px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      border-left: 2px  solid var(--primary-color);
+      border-right: 2px  solid var(--primary-color);
+      
+}
+.timezone-option::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* or any specific width you want */
+  height: 1px; /* thickness of the divider */
+  background-color: var(--primary-color);
+    margin-top: 10px; /* space between the element and the divider */
+}
+.timezone-option{
+  background-color: var(--baseback-antique);
+  filter: opacity(0.7);
+  color: var(--dark-color);
+  opacity: 1.0;
+}
+
+</style>
+<div class="ov-auto block ph100" id="formApplication">  
+<div class="text4 bold text-center text-primary">TWC CONNECT</div>
+<div class="btn bg-primary bold text-secondary text-center pad3 round3 mar3 shadow2 col2" onclick="scheduleBooking()">Schedule Classes</div>
+<section class="form-section">
+    <div class="flex round3 pad3 flex-center text-center">
+      <button class="btn bg-info text-primary border1 border-primary border-solid shadow2" onclick="openForm('demo')">Demo</button>
+      <div class="pad1"></div>
+      <button class="btn bg-primary text-info pad3 border1 border-info border-solid shadow2" onclick="openForm('registration')">Registration</button>
+    </div>
+<div class="mar2 text-center hidden" id="formTimeZone">
+    <h3 class="text-center">Your Timezone: Click to Change</h3>
+    <input type="text" id="timeZoneData" placeholder="Type and search" class="round3 shadow2 line2 text-center block pw100 mar2">
+    <div id="timezoneListForm" class="ov-auto bg-light pw80"></div>
+</div>
+    <h2 id="formResp" class="pad1 text-primary"></h2>
+
+  <form id="callbackForm" class="block bg-info pad1 round2 shadow1 text-primary col2 center">
+      <input name="name" type="text" placeholder="Your Name" required />
+      <input name="tel" type="tel" placeholder="Mobile Number" required />
+      <input name="availability" type="text" placeholder="Preferred Time (e.g. Weekends, Evenings)" />
+       <input type="text" name="hp_field" style="display: none;" autocomplete="off" tabindex="-1">
+
+      <button class="btn bg-primary text-info pad3" type="submit" onsubmit="event.preventDefault()">Get a Callback</button>
+    </form>  
+  <form id="demoForm" class="block bg-info pad1 round2 shadow1 text-primary col2 center">
+    <input type="text" name="Timestamp" id="demoTimeStamp" readonly>
+    <input type="text" name="Name" placeholder="Name" required />
+    <input type="number" name="Age" placeholder="Age" required />
+    <input type="text" name="Guardian" placeholder="Guardian's Name" required />
+    <input type="tel" name="Contact" placeholder="Contact Number" pattern="[0-9]{10}" required />
+    <input type="email" name="Email" placeholder="Student Email" required />
+    <input type="text" name="Course" placeholder="Course" required />
+    <input type="text" name="Comment" placeholder="Comment">
+    <select name="mode" id="demoMode">
+<option value="online">Online</option>
+<option value="offline">Offline 
+  <input type="text" name="location" placeholder="Desired Demo Location">
+</option>
+    </select>
+    <input type="text" name="hp_field" style="display:none;" tabindex="-1" autocomplete="off" />
+    <button type="button" class="btn bg-primary" onclick="getDemoDates()" id="demoDateBtn">Get Demo Timings</button>
+  </form>
+
+    <form id="registrationForm" class="block bg-info pad1 round2 shadow1 text-primary col2 center">
+    <input type="text" name="Timestamp" id="registrationTimeStamp" readonly>
+    <input type="text" name="Name" placeholder="Name" required />
+    <input type="date" name="DOB" placeholder="Date of Birth" required />
+    <input type="text" name="Guardian" placeholder="Guardian's Name" required />
+    <input type="text" name="Relation" placeholder="Relation with Guardian" required />
+    <input type="tel" name="Contact" placeholder="Contact Number" pattern="[0-9]{10}" required />
+    <input type="email" name="Email" placeholder="Student Email" required />
+    <textarea name="Address" placeholder="Address" required></textarea>
+    <input type="text" name="Course" placeholder="Course" required />
+    <input type="text" name="Grade" placeholder="Grade" required />
+    <input type="text" name="School" placeholder="School" required />
+    <input type="text" name="hp_field" style="display:none;" tabindex="-1" autocomplete="off" />
+    <button type="submit" class="btn bg-primary text-info pad3">Submit</button>
+  </form>
+  <div class="pad1 mar1 block">
+    <!-- Blank Space -->
+  </div>
+</section>
+
+</div>
+<div class="ov-auto block ph100 hidden" id="scheduleBooking"> 
+
+</div>
+
+
+
+<script src="/sa6ang2rha7lay9/t6w2c7pfs/js/join.js"></script>
+</body>
+</html>

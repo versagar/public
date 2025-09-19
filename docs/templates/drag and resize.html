@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable and Resizable Div</title>
+    <style>
+        #resizable {
+            display: block;
+            position: absolute;
+            top: 14vmin;
+            right: 0;
+            width: 30vw;
+            height: 70%;
+            min-width: 200px; /* Initial width */
+            min-height: 300px; /* Initial height */
+            background: lightblue;
+            border: 2px solid #000;
+            cursor: move; /* Default cursor */
+            overflow: hidden;
+        }
+        #resizable .resizer {
+            width: 10px;
+            height: 10px;
+            background: darkblue;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            cursor: sw-resize; /* Cursor for resizing from bottom-left */
+        }
+        #mitrabox {
+            height: max-content;
+        }
+        #chatMitra {
+            position:  absolute;
+            right: 0;
+            text-decoration: none;
+            font-size: 2vmin;
+            font-weight: 700;
+            border-radius: 20px 0 0 20px;
+            width: 6vmin;
+            padding: 1vmin;
+            padding-left: 2vmin;
+            color: antiquewhite;
+            background-color: rgba(97, 73, 45, 0.432);
+            text-shadow: 1vmin 1vmin 5px black;
+            overflow-wrap: normal;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="mitraBox">
+        <a href="javascript:void(0)" id="chatMitra" onclick="openMitra()">Physer Mitra</a>
+        <div id="resizable">
+            <iframe src="../emba/AI/Chatbot/Botpress/Physer Mitra/physermitra.html" frameborder="0" width="100%" height="100%"></iframe>
+            <div class="resizer"></div>
+        </div>
+    </div>
+    
+
+    
+<script src="js/drag and resize.js"></script>
+</body>
+</html>

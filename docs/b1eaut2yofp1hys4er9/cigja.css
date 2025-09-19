@@ -1,0 +1,22 @@
+@media only screen and (max-width:512px){
+  .openOv {
+    display: none;
+  }
+  .mblock a {
+    font-size: 1em;
+    padding: 0;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+
+/* for keypad phones of width less than 240 px.
+
+@media only screen and (max-width: 128px) {
+ 
+
+  }
+
+*/

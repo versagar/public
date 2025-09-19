@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile: Sagar Verma</title>
+  <script src="/1san9cha1la7k9/dbhhfcfcfabe.js"></script>
+
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-wrap: normal;
+    }
+
+    p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: normal;
+      padding: 1vw 1vw 1vw 2vw;
+      font-size: 2.5vmin;
+    }
+
+    ul {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: normal;
+      padding-left: 5vw;
+      padding-right: 1vw;
+      font-size: 2.5vmin;
+      line-height: 4vmin;
+    }
+
+
+    .sidebar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: bisque;
+      width: 8%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .desc {
+      margin-left: 8%;
+      display: block;
+      float: left;
+      background-color: antiquewhite;
+      width: 92%;
+      height: auto;
+    }
+
+    .sidebar a {
+      display: block;
+      position: relative;
+      width: 90%;
+      margin: auto;
+      background-color: antiquewhite;
+      text-decoration: none;
+      text-align: center;
+      padding: 0;
+      overflow: hidden;
+
+    }
+
+    .sectxt {
+      display: block;
+      bottom: 0;
+      background-color: red;
+      width: 100%;
+      height: max-content;
+      text-align: center;
+      font-size: 4vmin;
+      color: darkgray;
+      text-shadow: 0.1vw 0.1vw black;
+      overflow-wrap: normal;
+      font-weight: bold;
+      border-top: 0.25vmax solid gray;
+      border-bottom: 0.25vmax solid black;
+    }
+
+    .sidebar img {
+      display: block;
+      width: 80%;
+      margin: auto;
+      background-color: bisque;
+    }
+
+    .section {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      border-bottom: 1vw solid #505060;
+
+    }
+
+    #about {
+      background-color: #505060;
+    }
+
+    #experience {
+      background-color: lightskyblue;
+      border-bottom: 2vw ridge black;
+    }
+    #contact {
+      background-color: lightblue;
+    }
+
+    .photo img {
+      height: 40vw;
+    }
+
+    .photo {
+      display: block;
+      float: left;
+      height: auto;
+      overflow: hidden;
+
+    }
+
+    .short-desc {
+      display: block;
+      height: 40vw;
+      width: auto;
+      padding-top: 15vw;
+      overflow-wrap: break-word;
+
+    }
+
+    .h1 {
+      font-size: 5vw;
+      text-align: center;
+      font-family: 'monospace', Courier New, Courier;
+      font-weight: bold;
+      border-bottom: 0.5vw solid white;
+      box-shadow: 0 0.1vh 0 0;
+      text-shadow: 0.1vw 0.1vw white;
+    }
+
+    .h3 {
+      padding: 2vw;
+      font-size: 2.5vw;
+      text-align: center;
+      background-color: #505060;
+      border-radius:  2vw;
+      font-family: 'Franklin Gothic Medium',
+        'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .about-desc {
+      display: block;
+      float: left;
+      width: 100%;
+      height: auto;
+      background-color: lightgray;
+    }
+
+    .work_list {
+      display: block;
+      float: left;
+      padding-bottom: 5vw;
+      width: 90%;
+      margin-left: 8%;
+      border-left: 2vw ridge black;
+    }
+
+    .work_profile {
+      display: block;
+      float: left;
+      background-color: aquamarine;
+      width: 90%;
+      height: fit-content;
+      margin-top: 2.5vw;
+      margin-left: -1vw;
+      padding: 0;
+      padding-left: 3vw;
+      border-radius: 0 10px 10px 0px;
+      box-shadow: 1vw 1vw gray;
+
+    }
+
+    .work_profile img
+
+    /*opener arrow*/
+      {
+      display: block;
+      float: left;
+      width: 5%;
+      height: auto;
+      margin-top: 2vmin;
+      outline: 0.5vw solid gray;
+      border: 0.3vw solid black;
+      border-radius: 8px;
+      background-color: wheat;
+    }
+
+    .work_profile img:active {
+      border-left: 1vw solid black;
+      border-top: 1vw solid black;
+    }
+
+    /*       .work_profile:active {
+          box-shadow: none;
+          margin-top: 3vw;
+          margin-left: 1%;
+        }
+*/
+    .work_profile p {
+      display: block;
+      float: left;
+      width: 90%;
+      height: auto;
+      padding: 0;
+      font-size: 2.5vmin;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+    }
+
+    .hanger {
+      display: none;
+      float: left;
+      margin-top: 1vw;
+      margin-left: 25%;
+      width: 50%;
+      height: 10vmin;
+      border-left: 1vw groove black;
+      border-right: 1vw groove black;
+    }
+
+    .work_detail {
+      display: none;
+      float: left;
+      margin-left: 2.5%;
+      width: 95%;
+      background-color: wheat;
+      min-height: 20vh;
+      border-radius: 20px;
+      box-shadow: 1vw 1vw gray;
+      overflow: hidden;
+    }
+    .box-pack {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .box-pack p {
+      display: block;
+      float: left;
+      margin: 1vmin;
+      width: fit-content;
+      font-size: 3vmin;
+      background-color: #505060;
+      border-radius: 2vmin;
+      font-weight: bold;
+      text-shadow: 0.2vmin 0.2vmin;
+      box-shadow: -0.5vmin -0.5vmin;
+      overflow: hidden;
+    }
+    .block{
+      display: block;
+      overflow: hidden;
+    }
+
+    .block p {
+      display: block;
+      float: left;
+      width: 80%;
+      overflow-wrap: normal;
+    }
+
+    .block img {
+      display: block;
+      margin-top: 2vmin;
+      float: left;
+      width: 10vmin;
+      height: 10vmin;
+    }
+
+    @media screen and (max-aspect-ratio:1) {
+      .sidebar {
+        height: 9vw;
+        width: 100%;
+        top: 0;
+        position: fixed;
+        
+      }
+
+      .sidebar a {
+        margin: auto;
+        float: left;
+        width: 25%;
+      }
+
+      .sidebar img {
+        width: 40%;
+      }
+     
+      #about {
+        padding-top: 9vw;
+        height: fit-content;
+      }
+
+      .desc {
+        margin: 0;
+        width: 100%;
+      }
+
+      .photo img {
+        width: 80vw;
+        height: auto;
+        margin: 0;
+        margin-left: 10vw;
+
+      }
+
+      .photo {
+        padding: 0;
+        width: 100%;
+        height: fit-content;
+      }
+
+      .short-desc {
+        float: left;
+        width: 100%;
+        height: auto;
+        padding: 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href="#about"> <img src="profile_bbg.png" alt="">
+      <div class="sectxt">About</div>
+    </a>
+    <a href="#experience"><img src="exp_icon.png" alt="">
+      <div class="sectxt">Works</div>
+    </a>
+    <a href="#qualifications"><img src="skills_icon.png" alt="">
+      <div class="sectxt">Skills</div>
+    </a>
+    <a href="#contact"><img src="ekdjbbdjihjeiijgElcc.png" alt="">
+      <div class="sectxt">contact</div>
+    </a>
+  </div>
+  <div class="desc">
+    <div class="section" id="about">
+      <div class="photo">
+        <img src="profile_img.png"></img>
+      </div>
+      <div class="short-desc">
+        <div class="h1">SAGAR VERMA</div>
+        <div class="h3"><b>Robotics Trainer | Academic Lead | Physics Teacher | Content Creator | Web Developer</b>
+        </div>
+      </div>
+      <div class="about-desc">
+        <p>
+          As a passionate Robotics Trainer and Academic Lead based in Bangalore, I specialize in teaching Physics, Robotics, and STEM Education. My work focuses on not just imparting knowledge but also fostering creativity and problem-solving skills among students. I also design websites and create educational content, particularly in Physics.
+
+With over several years of experience teaching in schools, I’ve honed my ability to simplify complex scientific concepts for students of all levels. I’ve worked as a Physics Teacher and Physics Content Creator in three schools, developing curriculum material and interactive lessons to engage students effectively.
+
+I love learning new things, and I thrive in roles that allow me to innovate, whether it’s creating new designs, programs, or troubleshooting technical issues. My areas of interest include Physics, Mathematics, Computer Science, and Electronics—fields where I am always eager to expand my knowledge and skills.
+
+I enjoy working on projects that challenge me, particularly in areas where I can create new solutions and apply critical thinking. Whether it's building a robot, designing a website, or teaching physics in a fun, engaging way, I am driven by the opportunity to make a tangible impact.
+
+        </p>
+      </div>
+    </div>
+
+
+    <div class="section" id="experience">
+      <div>
+        <p class="h1">Work and experience</p>
+        <p>
+          I have experience working with four institutions for offline physics teaching, one for online physics
+          teaching, and another for developing learning content. Currently, I am a part-time physics Teacher and a
+          full-time robotics trainer. Additionally, I am involved in website projects where I create websites using core
+          coding.
+        </p>
+      </div>
+
+      <div class="work_list">
+
+        <div class="work_profile" onclick="wDetail('work1','opener1','hanger1')">
+          <p>Robotics Trainer : Current</p><img src="ecabejdcddgiah.png" alt="↘" id="opener1">
+        </div>
+        <div class="hanger" id="hanger1"></div>
+        <div class="work_detail" id="work1">
+          <p><b>As a robotics trainer at this institute, my responsibilities are - </b></p>
+          <ul>
+            <li>Training all kinds of students according to their learning behaviour</li>
+            <li>Guiding them to become advanced in making mechanical Lego models from beginners</li>
+            <li>Improving their creativity and problem solving in mechanical physics</li>
+            <li>Guiding them to become advanced in coding using variables, loops, conditions, sensor controls, motors
+              and other components for controlling their robotic models</li>
+            <li>Improving their critical thinking and general creativity by giving them applications of the concepts in
+              real life problem solving.</li>
+          </ul>
+          <p>Apart from these, I am also involved in IT management and troubleshooting. I am also responsible for
+            managing business tools like whatsapp automation, google sheet automation, CRM management and workflows,
+            etc.</p>
+
+        </div>
+
+        <div class="work_profile" onclick="wDetail('work2','opener2','hanger2')">
+          <p>Byju's Home Tutor : Current</p><img src="ecabejdcddgiah.png" alt="↘" id="opener2">
+        </div>
+        <div class="hanger" id="hanger2"></div>
+        <div class="work_detail" id="work2">
+          <p><b>As a physics Teacher at Byju’s Home Tuitions, my responsibilities are to -</b></p>
+          <ul>
+            <li>Teach students as per curriculum and schedule with personalised attention</li>
+            <li>Assess students progress through homework, exam grades, and Individual Performance Tracking system</li>
+            <li>Discuss homework, resolve doubts and prepare customised assignments</li>
+            <li>Provide detailed study plans.</li>
+          </ul>
+        </div>
+
+        <div class="work_profile" onclick="wDetail('work2a','opener2a','hanger2a')">
+          <p>One-on-one Teacher (Physics, Maths, Computer Science)</p><img src="ecabejdcddgiah.png" alt="↘" id="opener2a">
+        </div>
+        <div class="hanger" id="hanger2a"></div>
+        <div class="work_detail" id="work2a">
+          <p><b>As a one-on-one individual Teacher, my responsibilities include -</b></p>
+          <ul>
+            <li>Teaching students how to learn maths, computer science and physics</li>
+            <li>Giving them the concepts of their board curriculum</li>
+            <li>Helping in visualising the real life applications of the science concepts</li>
+            <li>Improving their creativity and critical thinking by giving problems and then by encouraging them to
+              solve</li>
+
+          </ul>
+        </div>
+
+        <div class="work_profile" onclick="wDetail('work3','opener3','hanger3')">
+          <p>Web Developer for individual projects: Current</p><img src="ecabejdcddgiah.png" alt="↘" id="opener3">
+        </div>
+        <div class="hanger" id="hanger3"></div>
+        <div class="work_detail" id="work3">
+          <p><b>I work as a web developer for some of my projects including <a href="/index.html">physer.in</a> and
+              this profile page. As a web developer for my projects, I -</b></p>
+          <ul>
+            <li>Create websites using core coding of HTML, CSS and Javascript without any library or framework</li>
+            <li>Host webpages using hosting servers like github, firebase, etc</li>
+            <li>Connect and manage related domain names and sitemaps.</li>
+          </ul>
+        </div>
+
+        <div class="work_profile" onclick="wDetail('work4','opener4','hanger4')">
+          <p>Content Creator for Physics : Former</p><img src="ecabejdcddgiah.png" alt="↘" id="opener4">
+        </div>
+        <div class="hanger" id="hanger4"></div>
+        <div class="work_detail" id="work4">
+          <p>
+            <b>I have worked as a content creator for an academy. For that I was -</b>
+          </p>
+          <ul>
+            <li>Creating physics learning contents, so that children can read and understand the concepts easily with
+              the help of pictures and interesting examples</li>
+            <li>Creating quiz questions for revision of concepts.</li>
+          </ul>
+          <p>While creating contents, I kept in mind that it should be easy to understand and improve creative and
+            critical thinking.
+          </p>
+        </div>
+
+        <div class="work_profile" onclick="wDetail('work5','opener5','hanger5')">
+          <p>Physics Teacher at Delhi Public School Bhabua : Former</p><img src="ecabejdcddgiah.png" alt="↘" id="opener5">
+        </div>
+        <div class="hanger" id="hanger5"></div>
+        <div class="work_detail" id="work5">
+          <p>
+            <b>I also have enjoyed shaping future of students as Physics Teacher at Delhi Public School, Bhabua. My responsibilities were -</b>
+          </p>
+          <ul>
+            <li>Teaching students according to CBSE curriculum</li>
+            <li>Helping them in understanding the applications of concepts in practical view</li>
+            <li>Guiding them in Laboratory</li>
+            <li>Making them revise the concepts regularly</li>
+            <li>Making question papers and doing assessments and evaluations.</li>
+          </ul>
+        </div>
+
+        <div class="work_profile" onclick="wDetail('work6','opener6','hanger6')">
+          <p>Physic Teacher at BFL Online: Former</p><img src="ecabejdcddgiah.png" alt="↘" id="opener6">
+        </div>
+        <div class="hanger" id="hanger6"></div>
+        <div class="work_detail" id="work6">
+          <p>
+            <b>I love teaching online as well as offline. As an Online Physics Teacher at Basic First Learning, I was -</b>
+          </p>
+          <ul>
+            <li>Teaching students in interesting ways with the use of pentab and online simulations</li>
+            <li>Making them revise the concepts regularly</li>
+            <li>Making question papers and doing assessments and evaluations.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="section" id="contact">
+      <p class="h1">Contact Me</p>
+      <div class="block">
+      <p>You can send a mail to me by clicking on the following button.</p>
+      <a href="mailto:physertwc@gmail.com"><img src="email.png" alt="Email"></a>
+
+      <p>You can send a whatsapp message by clicking on the following button.</p>
+      <a href="https://api.whatsapp.com/send?phone=917366006527&text=Hi%20Sagar%20Verma,%20I%20just%20visited%20your%20profile%20and%20wished%20to%20contact%20you." target="_blank"><img src="whatsapp.png" alt="whatsapp"></a>
+
+      <p>You can click on the following button to call directly. Note that if your call is not picked up, you'll get a callback within 24 hours. If you don't get a callback, you can try another method of contacting. Sorry for possible inconvenience</p>
+      <a href="tel:+917366006527"><img src="tel.png" alt="tel"></a>
+    </div>
+    </div>
+  </div>
+<script src="/ecjigjd/js/saga&1214.js"></script>
+</body>
+
+</html>

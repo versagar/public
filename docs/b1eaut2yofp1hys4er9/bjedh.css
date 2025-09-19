@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.feed::-webkit-scrollbar {
+    width: 1vmin;
+}
+
+.feed::-webkit-scrollbar-thumb {
+    background-color: #fca766;
+}
+
+.feed::-webkit-scrollbar-track {
+    background-color: rgb(253, 241, 224);
+}
+
+
+body {
+    height: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 12vmin;
+    border-bottom: 0.1vmin solid #c1c6af;
+    overflow: hidden;
+    padding-top: 0.5vmin;
+    padding-bottom: 0.5vmin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    font-weight: 900;
+}
+
+.htitle {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 11vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    text-align: center;
+    box-shadow: 0.1vmin 0.1vmin 0.2vmin white;
+}
+
+.htitle:active {
+    box-shadow: none;
+    border: none;
+    margin-top: 0.1vmin;
+    margin-left: 0.1vmin;
+}
+
+.h1 {
+    text-decoration: none;
+    font-size: 5vmin;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0.3vmin 0.3vmin 0.1vmin black;
+}
+
+.h3 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vmin;
+    color: #D9D8AB00;
+    text-shadow: 0.1vmin 0.1vmin 0.1vmin white;
+}
+
+.logo {
+    float: left;
+    height: 11vmin;
+    width: calc(height);
+    margin-top: 0.25vmin;
+}
+
+.menu {
+    float: left;
+    font-size: 4vmin;
+    height: 11vmin;
+    padding: 1vmin auto;
+    text-align: center;
+    border: 0.1vmin solid #8c3f06;
+    box-shadow: 0.3vmin 0.3vmin 0.5vmin black;
+    text-shadow: 0.3vmin 0.3vmin 0.2vmin black;
+}
+
+.menu:active {
+    box-shadow: none;
+    border: 0.1vmin solid #111;
+}
+
+.mblock {
+    display: none;
+    margin-left: auto;
+    flex-direction: row-reverse;
+   
+}
+
+.mblock a {
+    font-size: 5vmin;
+    width: 1em;
+    aspect-ratio: 1;
+    height: auto;
+    line-height: auto;
+    margin-right: 1vmin;
+    border: 0.1vmin solid black;
+    background-color: antiquewhite;
+    border-radius: 0.3vmin;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0.1vmin 0.1vmin 0.1vmin white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #6C2E00;
+}
+
+.mblock a:active {
+    box-shadow: none;
+    transform: translate(1px,1px);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden ;
+    transition: 0.5s;
+}
+
+.closebtn {
+    font-size: 6vmin;
+    margin-top: 0.5vmin;
+    text-decoration: none;
+    float: right;
+    color: #fff;
+    background-color: #111;
+    display: block;
+}
+
+.ml {
+    padding: 1.5vmin;
+    text-decoration: none;
+    width: 100%;
+    font-size: 2vmin;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.ml:active {
+    color: #818181;
+}
+
+.wbody {
+    /* background: url(../loader.gif) center center no-repeat; */
+    display: block;
+    width: 100%;
+    height: calc(100% - 12vmin);
+    overflow: hidden;
+}
+
+.top-btns {
+    display: block;
+    float: left;
+    height: 5vmin;
+    font-size: 3vmin;
+    padding: 1vmin;
+    border-radius: 4px;
+    box-shadow: 0.5vmin 0.5vmin gray;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 1px 1px 1px #6C2E00;
+}
+.top-btns:active {
+    box-shadow: -2px -2px 1px black;
+    margin-top: 2px;
+    margin-right: 2px;
+}    
+.myOv {
+    width: 0;
+    height: 100%;
+    display: none;
+    float: left;
+    transition: 0.3s;
+    display: block;
+    margin: 0;
+    padding-right: 0.5vmin;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.rFrame {
+    width: 100% ;
+    height: 30%;
+    margin-top: 0.5vmin;
+    overflow: hidden;
+}
+
+.arframe {
+    padding-top: 0.5vmin;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: stretch;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.arframe button {
+    font-stretch: condensed;
+    flex-wrap: wrap;
+    overflow: hidden;
+    font-size: 2.5vmin;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    height: auto;
+    padding: 0.25vmin;
+    background-color: #C1C6AF;
+    color: white;
+    float: right;
+    margin-bottom: 0.4vmin;
+    box-shadow: -0.3vmin 0vmin 0.1vmin black;
+    text-shadow: 0.1vmin 0.1vmin 0.1vmin black;
+}
+.arframe button:active {
+    width: 80%;
+    margin-right: 0.5%;
+    box-shadow: 0.1vmin 0vmin 0.1vmin black;
+}
+.myFeed {
+    width: 100%;
+    height: 100%;
+    float: right;
+    margin: 0;
+    overflow: hidden;
+}
+#openOv {
+    top: 14vmin;
+    color: white;
+    position: absolute;
+}
+#fullOpener {
+    top: 14vmin;
+    right: 0;
+    padding: 0;
+    position: absolute;
+}
+#fullCloser {
+    display: none;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.helpBlock {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 1vmin 1vmin 10px #111;
+    font-weight: 800;
+    color: #000000;
+    background-color: rgba(232, 238, 147, 0.938);
+    border: 2vmin black;
+    border-radius: 10px;
+    padding: 1vmin;
+}
+
+#helpOv {
+   top: 13vmin;
+   left: 3vw;
+}
+#openOv:hover + #helpOv {
+    display: block;
+}
+#helpFull {
+    top: 13vmin;
+    right: 5vw;
+}
+#fullOpener:hover + #helpFull {
+    display: block;
+}
+#helpToc {
+    top: 0;
+    left: 20vw;
+}
+#contentbtn:hover + #helpToc {
+    display: block;
+}
+#helpTocLock {
+    top: 0;
+    left: 25vw;
+}
+#contentLockbtn:hover + #helpTocLock {
+    display: block;
+}
+.phead, .ov {
+    width: 100%;
+    font-size: 100%;
+    display: block;
+    color: var(--blue-color);
+    background-color: var(--info-color);
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0vmin 0.2vmin 0vmin #C1C6AF;
+}
+
+
+.feed {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 96%;
+    overflow-y: scroll;
+    max-width: 1200px;
+}
+#frameOverview {
+   width: 80%;
+   height: 60%;
+}
+
+
+.uipara p {
+    padding: 1vmin;
+}
+#odinUpdate {
+    width: 100%;
+    height: calc(130% - 10vw);
+}
+#tgpOpener {
+    margin-left: 3vw;
+}
+#rTgp {
+    display: none;
+    width: 100%;
+    height: calc(100% - 6vmin);
+    overflow: hidden;
+}
+#tgpMenu {
+    display: none;
+}
+.tgp_menu {
+    float: left;
+}
+
+.nav_frame {
+    display: block;
+    float: left;
+   /* height: calc(100vh - 30vmin); */
+   height: 100%;
+    overflow-wrap: normal;
+    overflow-y: scroll;
+}
+.htmlTgp {
+    margin-left: -20px;
+}
+#content {
+    width: 30%;
+}
+
+#loaderGif {
+    display: none;
+    background: url(../loader.gif) center center no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+
+}
+.topic_desc {
+    display: block;
+    float: left;
+    /* height: calc(100vh - 30vmin); */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fff1a0;
+    scrollbar-width: 0;
+}
+#tgpCover img {
+    width: 90%;
+    height: 100%;
+}
+#form {
+    overflow: hidden;
+    display: none;
+}
+
+#guideFrame {
+    background: url(../loader.gif) center center no-repeat;
+	width: 100%;
+	height: 100%;
+}
+.frameBtn {
+    border: 3px solid white;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.frameBtn:active {
+    border: none;
+    border-radius: 0;
+}
+#socialBtn {
+    display: block;
+    width: auto;
+    float: left;
+}
+
+#fbBtn {
+    background-color: rgb(35, 35, 243);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4vmin;
+    text-align: center;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px #4b66fc;
+    height: 5vmin;
+    width: 5vmin;
+    overflow: hidden;
+}
+
+#wpimg {
+    margin: 10px auto;
+    height: auto;
+    width: 30%;
+    display: block;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 14vmin;
+	display: block;
+    float: left;
+    padding: 1vh;
+    overflow: hidden;
+}   
+footer p {
+    color: white;
+}
+
+.footlink {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+#cpnoticebtn {
+    color: white;
+    display: block;
+    background-color: black;
+    height: auto;
+    width: auto;
+    float: left;
+}
+.cpnotice {
+    color: white;
+    background-color: black;
+    display: none;
+    margin: auto;
+    font-size: 3vmin;
+    padding: 5vh;
+    width:70%;
+    top: 20vmin;
+    left: 15%;
+    right: 15%;
+    position: absolute;
+    
+}
+.footlink a, .footlink button {
+    font-size: 4vmin;
+    padding: 0.2vh;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(51, 30, 30);
+    background-color: #555555;
+    border: 0.1vmin solid white;
+    text-shadow: 0.1vmin 0.1vmin 0.1vmin black;
+    box-shadow: 0.2vmin 0.2vmin 0.1vmin #555555;
+    border-radius: 6px;
+}
+
+.footlink a:active {
+    box-shadow: none;
+    margin: 0.2vmin 0.1vmin 0.1vmin 0.2vmin;
+}
+
+.twcheadline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 7vmin;
+    background-color: antiquewhite;
+    z-index: 1;
+}
+
+.ttmenubtn {
+    display: block;
+    float: left;
+    height: 7vmin;
+}
+
+.fwbox {
+    display: block;
+    margin-top: 2vmin;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.loadedobject {
+    width: 100%;
+    height: 100%;
+    overflow-wrap: normal;
+}
+
+
+
+
+@media only screen and (max-width: 761px) {
+    /* .myFeed {
+       width: 100%;
+    }
+    .myOv {width: 0;}
+    .openOv {display: inline;} */
+
+    #chatBox {
+        width: 100%;
+        height: 90vh;
+        min-width: 50%;
+      }
+}
+
+/*@media (orientation: landscape) { 
+    .feed {
+        height: 75vmin;
+    }
+}
+*/
+@keyframes blinkBlock {
+    0%{
+        display: block;
+    }
+    25%{
+        display: none;
+    }
+    75%{
+        display: block;
+    }
+    100%{
+        display: none;
+    }
+}
+
+
+#chatBox {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    min-width: 400px;
+    max-width: 700px;
+    height: calc(100% - 26vmin);
+    min-height: 300px; /* Initial height */
+    background-color: #fcf370ad;
+    border-radius: 5px;
+    cursor: move; /* Default cursor */
+    overflow: hidden;
+    background-image: url('../sa6ang2rha7lay9/1tas2wee1r4sang9/dchdjbbci.webp');
+    background-size: 30vmin 30vmin;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#chatBox iframe {
+    display: block;
+    float: left;
+    width: 100%;
+}
+#mitraCloser {
+    display: block;
+    position: absolute;
+}
+.mitrabtns {
+    font-size: 5vmin;
+    color: antiquewhite;
+    background-color: rgba(128, 128, 128, 0.658);
+    border-radius: 10px;
+    z-index: 2;
+}
+#botCover {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+}
+.mitrabtns:active {
+    font-size: 4vmin;
+    color: black;
+}
+#chatMitra {
+    position:  absolute;
+    top: 25vmin;
+    right: 0;
+    text-decoration: none;
+    font-size: 2vmin;
+    font-weight: 700;
+    border-radius: 20px 0 0 20px;
+    width: 9vmin;
+    padding: 1vmin;
+    padding-left: 2vmin;
+    color: antiquewhite;
+    background-color: rgba(97, 73, 45, 0.432);
+    text-shadow: 1vmin 1vmin 5px black;
+    overflow-wrap: normal;
+    height: auto;
+}
+#chatMitra:hover + #mitraIntro {
+    display: block;
+}
+#mitraIntro {
+    right: 5vmin;
+    top: 20vmin;
+}
+
+
+
+/* General css */
+

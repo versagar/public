@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Booking</title>
+    <link rel="stylesheet" href="/b1eaut2yofp1hys4er9/lib.css">
+   <script src="/1san9cha1la7k9/efahfcfcfabe.js"></script>
+  <script src="/1san9cha1la7k9/dgfbbhhfcfcfabe.js"></script>
+  <script  src="/1san9cha1la7k9/dbhhfcfcfabe.js"></script>
+</head>
+<body class="ov-hidden">
+  <style>
+    #dateList {
+      vertical-align: middle;
+    }
+    #timezoneListSh{
+      max-height: 400px;
+      position: absolute;
+    }
+    .tz-selector-sh{
+      z-index: 1000;
+    }
+   
+
+  </style>
+<div class="flex-cb hidden" id="currentDateTime">
+  <div class="tz-selector-sh ov-unset col2 left">
+<input  name="timezone-input" id="testTimezoneInput" class="bg-primary round3 shadow2 line2 text-secondary text-center block pw100" placeholder="Type and Search">
+  <div id="timezoneListSh" class="abs hidden bg-info ov-auto"></div>
+  </div>
+<input name="Timestamp" class="bg-secondary round3 shadow2 line2 text-success text-center bold col2 right" id="displayTimeSh">
+
+</div>
+<input id="utcValue" class="line1-5 hidden">
+<div id="test"></div>
+<div class="pop-overlay" id="overlayId"></div>
+<div class="pop-show" id="popId"></div>
+<section class="form-section" id="loginSection">
+    <div class="col2 pad1 bg-info pw80 center round2 ov-hidden">
+        <form id="loginForm">
+<input type="text" name="id" placeholder="Student Id">
+<input type="password" name="pass" placeholder="Password">
+<input type="button" onclick="getBatches()" value="Submit" class="btn bg-primary text-secondary bold">
+        </form>
+    </div>
+</section>
+
+<section id="scheduleSetting" class="bg-secondary pad3">
+    
+    <form id="selectedDates" class="flex-wrap hidden">
+      <!-- <p><strong>Selected Dates: </strong>Click on the selected dates to remove</p> -->
+      <button type="button" class="pad3 shadow2 round2 left pw45 text-center btn bg-primary text-light bold" id="dateSubmitBtn" value="1 July 2000">Submit Dates >></button>
+      <button type="button" class="pad3 shadow2 round2 left pw45 text-center btn bg-primary text-light bold" 
+        id="hideDetailsBtn" 
+        onclick="displayBlock('batchSummary','block', 'textContent', 'hideDetailsBtn','Hide Batch Details', 'Show Batch Details')" value="1 July 3000">Hide Batch Details</button>
+
+    </form>
+    <details class="custom-details block" id="batchDetails">
+  <summary id="batchSummary" class="pad2 block round3 shadow2 bg-light text-primary text2">Batch List</summary>
+  <div id="scheduleBox" class="table-box"></div>
+</details>
+    <div id="dateList" class="pad1 bg-info round2 hidden"></div>
+  </section>
+
+  
+
+<script src="js/schedule.js"></script>
+</body>
+</html>
