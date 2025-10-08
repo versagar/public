@@ -64,7 +64,7 @@
   </div>
  
 </div>
-    <button class="btn btn-primary right block btn round3 shadow2 pad3" onclick="toggleElement('.mblock','flex');toggleElement('.twc-btn','flex');">&LeftTeeArrow;</button>
+    <button class="btn btn-primary right block btn round3 shadow2 pad3" onclick="toggleDisplay('.mblock','flex');toggleDisplay('.twc-btn','flex');">&LeftTeeArrow;</button>
 
   	   <!-- <div id="mySidenav" class="sidenav ov-hidden" >
     <a class="closebtn" href="javascript:void(0)" onclick="closeNav()" > &times;</a>
@@ -84,7 +84,7 @@
     <a id="fullOpener" class="top-btns" href="javascript:void(0)" onclick="fullOpen()">🔳</a>
     <div id="helpFull" class="helpBlock">Fullscreen View</div>
     <a id="fullCloser" href="javascript:void(0)" onclick="fullClose()">🔲</a>
-    <a href="javascript:void(0)" id="chatMitra" onclick="showBlock('chatBox'); hideBlock('chatMitra')">Physer Mitra</a>
+    <a href="javascript:void(0)" id="chatMitra" onclick="showBlock('chatBox'); hideBlock('chatMitra');loadObject('mitraContainer','/chat/index.html')">Physer Mitra</a>
    <div id="mitraIntro" class="helpBlock">Chat with your AI friend. Happy Learning!</div>
       <div id="chatBox">
         <a href="javascript:void()" onclick="hideBlock('chatBox'); showBlock('chatMitra')" id="mitraCloser" class="mitrabtns"> &minusb;</a>
@@ -95,9 +95,10 @@
         <a href="javascript:void()" onclick="move(1,'chatBox',10)" class="h1 abs left tmar" style="--tmar:3vmin;">&LeftArrowBar; </a>
 
 
-         <iframe src="emba/AI/Chatbot/Botpress/Physer Mitra/physermitra.html" frameborder="0" width="95%" height="100%"></iframe>
+         <!-- <iframe src="emba/AI/Chatbot/Botpress/Physer Mitra/physermitra.html" frameborder="0" width="95%" height="100%"></iframe> -->
 
-         <div id="botCover"></div>
+         <div id="mitraContainer"></div>
+         <!-- <div id="botCover"></div> -->
       </div>
   </div>
   <div id="wbody" class="wbody ov-hidden bg-secondary">

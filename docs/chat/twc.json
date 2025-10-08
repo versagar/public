@@ -1,0 +1,382 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "type": "question",
+      "text": "Welcome to TWC Classrooms! We inspire children and enthusiasts through Courses, Camps, and Events. What would you like to explore?",
+      "options": [
+        {"label":"About TWC","to":1},
+        {"label":"Courses","to":2},
+        {"label":"Events & Camps","to":11},
+        {"label":"Enrollment / Registration","to":14},
+        {"label":"Instructors & Expertise","to":22},
+        {"label":"Technical / Support","to":26},
+        {"label":"Other Queries","to":31}
+      ]
+    },
+    {
+      "id": 1,
+      "type": "info",
+      "text": "About TWC: TWC Classrooms is an initiative of Physer: The Wise Craze. We provide hands-on STEM learning in Robotics, Aeronautics, Electronics, Coding, Mathematics, and Science. Courses are for ages 4–20+; camps for ages 6–15. Visit: https://physer.in/twc",
+      "options": [
+        {"label":"Back to Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 2,
+      "type": "question",
+      "text": "Courses: Our courses are practical and project-based. Which subject are you interested in?",
+      "options": [
+        {"label":"Physics","to":3},
+        {"label":"Robotics","to":4},
+        {"label":"Electronics","to":5},
+        {"label":"Coding & Programming","to":6},
+        {"label":"Mathematics","to":7},
+        {"label":"Science","to":8},
+        {"label":"Logical Reasoning","to":9},
+        {"label":"Computer Science","to":10},
+        {"label":"Back to Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 3,
+      "type": "info",
+      "text": "Physics (Ages 4–20+): Build foundation with hands-on experiments covering mechanics, optics, electricity, and more. Details: https://physer.in/twc/courses#physics",
+      "options":[
+        {"label":"Back to Courses","to":2},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 4,
+      "type": "info",
+      "text": "Robotics (Ages 6–20+): Mechanical Robotics and Programmable Robotics. Projects include moving robots, line followers, and automation. Details: https://physer.in/twc/courses#robotics",
+      "options":[
+        {"label":"Back to Courses","to":2},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 5,
+      "type": "info",
+      "text": "Electronics: Learn components, circuits, sensors, and microcontroller projects. Details: https://physer.in/twc/courses#electronics",
+      "options":[
+        {"label":"Back to Courses","to":2},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 6,
+      "type": "info",
+      "text": "Coding & Programming: Start with block coding, Python, C++, and project-based software development. Details: https://physer.in/twc/courses#coding",
+      "options":[
+        {"label":"Back to Courses","to":2},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 7,
+      "type": "info",
+      "text": "Mathematics: Concept building from basics to advanced topics, problem solving, and competitions. Details: https://physer.in/twc/courses#maths",
+      "options":[
+        {"label":"Back to Courses","to":2},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 8,
+      "type": "info",
+      "text": "Science: Hands-on experiments in physics, chemistry, and biology to learn scientific methods. Details: https://physer.in/twc/courses#science",
+      "options":[
+        {"label":"Back to Courses","to":2},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 9,
+      "type": "info",
+      "text": "Logical Reasoning: Brain games, puzzles, and strategy exercises. Details: https://physer.in/twc/courses#logic",
+      "options":[
+        {"label":"Back to Courses","to":2},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 10,
+      "type": "info",
+      "text": "Computer Science: Practical knowledge of computer hardware, operating systems. Details: https://physer.in/twc/courses#cs",
+      "options":[
+        {"label":"Back to Courses","to":2},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 11,
+      "type": "question",
+      "text": "Events & Camps: Which event would you like details about?",
+      "options":[
+        {"label":"Pawan Bodh Aeronautics Camp","to":12},
+        {"label":"Other Upcoming Events","to":13},
+        {"label":"Back to Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 12,
+      "type": "info",
+      "text": "Pawan Bodh — Aeronautics Camp (Online, 5 days): Dates: Oct 6–10, 2025. Ages: 6–15. Timings: Juniors 5:30–6:30 PM; Seniors 6:30–7:30 PM. Fee: ₹1500 per student. Register: https://physer.in/events/pawanbodh/page.html",
+      "options":[
+        {"label":"Back to Events & Camps","to":11},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 13,
+      "type": "info",
+      "text": "Other Upcoming Events: Seasonal camps and workshops. Details: https://physer.in/events",
+      "options":[
+        {"label":"Back to Events & Camps","to":11},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 14,
+      "type": "question",
+      "text": "Enrollment / Registration: What would you like to register for?",
+      "options":[
+        {"label":"Register for a Course","to":15},
+        {"label":"Register for a Camp","to":16},
+        {"label":"Scholarships / Discounts","to":17},
+        {"label":"Back to Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 15,
+      "type": "info",
+      "text": "Course Registration: Visit courses page to choose a course and enroll online: https://physer.in/twc/courses",
+      "options":[
+        {"label":"Back to Enrollment / Registration","to":14},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 16,
+      "type": "info",
+      "text": "Camp Registration: Register for camps using the events registration form: https://physer.in/events/pawanbodh/page.html",
+      "options":[
+        {"label":"Back to Enrollment / Registration","to":14},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 17,
+      "type": "info",
+      "text": "Scholarships & Discounts: TWC offers group discounts and scholarships. Contact us: https://physer.in/connect-us/",
+      "options":[
+        {"label":"Back to Enrollment / Registration","to":14},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 18,
+      "type": "question",
+      "text": "Fees & Timings: What would you like to know?",
+      "options":[
+        {"label":"Course Fees","to":19},
+        {"label":"Camp Fees","to":20},
+        {"label":"Timings / Schedule","to":21},
+        {"label":"Back to Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 19,
+      "type": "info",
+      "text": "Course Fees: Varies by course. See details: https://physer.in/twc/courses",
+      "options":[
+        {"label":"Back to Fees & Timings","to":18},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 20,
+      "type": "info",
+      "text": "Camp Fees: Example — Pawan Bodh: ₹1500 for 5 days (online). Details: https://physer.in/events/pawanbodh/page.html",
+      "options":[
+        {"label":"Back to Fees & Timings","to":18},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 21,
+      "type": "info",
+      "text": "Timings & Schedule: Courses have their own schedule. Pawan Bodh camp: Juniors 5:30–6:30 PM; Seniors 6:30–7:30 PM (Oct 6–10, 2025). Check pages for details.",
+      "options":[
+        {"label":"Back to Fees & Timings","to":18},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 22,
+      "type": "question",
+      "text": "Instructors & Expertise: Which instructor or area do you want to know about?",
+      "options":[
+        {"label":"Sagar Verma","to":23},
+        {"label":"Aashutosh Pandey","to":24},
+        {"label":"Other Instructors","to":25},
+        {"label":"Back to Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 23,
+      "type": "info",
+      "text": "Sagar Verma: Expert in Physics and Robotics. He leads hands-on projects and guides students through mechanics and robotics design.",
+      "options":[
+        {"label":"Back to Instructors & Expertise","to":22},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 24,
+      "type": "info",
+      "text": "Aashutosh Pandey: Aeronautical Engineer with experience at HAL. He teaches aeronautics, flight principles, and model design.",
+      "options":[
+        {"label":"Back to Instructors & Expertise","to":22},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 25,
+      "type": "info",
+      "text": "Other Instructors: TWC brings instructors experienced in coding, electronics, math, and science. See instructor bios: https://physer.in/twc",
+      "options":[
+        {"label":"Back to Instructors & Expertise","to":22},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 26,
+      "type": "question",
+      "text": "Technical / Support: What do you need help with?",
+      "options":[
+        {"label":"Online Class Access","to":27},
+        {"label":"Login / Signup Issues","to":28},
+        {"label":"Platform / Website Help","to":29},
+        {"label":"Other Technical Support","to":30},
+        {"label":"Back to Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 27,
+      "type": "info",
+      "text": "Online Class Access: Join online classes via the TWC platform. See instructions and links: https://physer.in/twc",
+      "options":[
+        {"label":"Back to Technical / Support","to":26},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 28,
+      "type": "info",
+      "text": "Login / Signup Issues: Facing sign-in or registration problems? Contact support: https://physer.in/connect-us/",
+      "options":[
+        {"label":"Back to Technical / Support","to":26},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 29,
+      "type": "info",
+      "text": "Platform / Website Help: Report website or platform bugs with page URL, browser/device, and a short description: https://physer.in/connect-us/",
+      "options":[
+        {"label":"Back to Technical / Support","to":26},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 30,
+      "type": "info",
+      "text": "Other Technical Support: For device, camera, audio, or connectivity help, contact support: https://physer.in/connect-us/",
+      "options":[
+        {"label":"Back to Technical / Support","to":26},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 31,
+      "type": "question",
+      "text": "Other Queries: Choose a topic or ask your own question.",
+      "options":[
+        {"label":"Neurodiverse support","to":32},
+        {"label":"Are classes online?","to":33},
+        {"label":"Contact TWC","to":34},
+        {"label":"Hands-on projects?","to":35},
+        {"label":"Certification details","to":36},
+        {"label":"Competitions / Events","to":37},
+        {"label":"Ask a custom question","to":38},
+        {"label":"Back to Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 32,
+      "type": "info",
+      "text": "Neurodiverse Support: TWC courses are inclusive and provide flexible pace and support. Discuss specific needs with our team: https://physer.in/connect-us/",
+      "options":[
+        {"label":"Back to Other Queries","to":31},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 33,
+      "type": "info",
+      "text": "Are classes online? Most courses and camps have online options. Some sessions may be offline; check course/event pages.",
+      "options":[
+        {"label":"Back to Other Queries","to":31},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 34,
+      "type": "info",
+      "text": "Contact TWC: Reach us via https://physer.in/connect-us for queries, callbacks, or mentor contact.",
+      "options":[
+        {"label":"Back to Other Queries","to":31},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 35,
+      "type": "info",
+      "text": "Hands-on Projects: Every course and camp includes practical projects — robots, circuits, models, experiments, and coding.",
+      "options":[
+        {"label":"Back to Other Queries","to":31},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 36,
+      "type": "info",
+      "text": "Certification: Courses provide completion certificates. Advanced assessments may be available — check course details.",
+      "options":[
+        {"label":"Back to Other Queries","to":31},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 37,
+      "type": "info",
+      "text": "Competitions & Events: TWC shares competition and event opportunities periodically. Details: https://physer.in/events",
+      "options":[
+        {"label":"Back to Other Queries","to":31},
+        {"label":"Main Menu","to":0}
+      ]
+    },
+    {
+      "id": 38,
+      "type": "answer",
+      "text": "Please type your enquiry below and our team will get back to you soon. Include your name and contact details if you want a quicker reply.",
+      "options":[
+        {"label":"Back to Other Queries","to":31},
+        {"label":"Main Menu","to":0}
+      ]
+    }
+  ]
+}

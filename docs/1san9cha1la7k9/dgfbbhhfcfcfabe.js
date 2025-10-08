@@ -6,9 +6,6 @@ function getHint(hint) {
 }
 getHint('/1san9cha1la7k9/dbhhfcfcfabe.js');
 loadScript('O0O0O0O010O0O0O0O0');
-loadScript('../O0O0O0O010O0O0O0O0');
-loadScript('../../O0O0O0O010O0O0O0O0');
-
 function beautyHint(hint) {
     var link = document.createElement('link');
     link.rel = "stylesheet";

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TWC Classrooms Chatbot</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0; padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#chat-container {
+  width: 380px;
+  max-width: 95%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 2vmin;
+  overflow: hidden;
+}
+#chat-window {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+}
+.message {
+  margin: 8px 0;
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+.message.bot {
+  background: #e1f5fe;
+  align-self: flex-start;
+}
+.message.user {
+  background: #c8e6c9;
+  align-self: flex-end;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0;
+}
+.options button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #0288d1;
+  color: #fff;
+  cursor: pointer;
+  flex: 1 1 auto;
+  min-width: 80px;
+}
+.options button:hover { background: #0277bd; }
+#input-row { display: flex; gap: 6px; margin-top: 6px; }
+#input-row input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+#input-row button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div id="chat-container">
+  <div id="chat-window"></div>
+  <div id="options-row" class="options"></div>
+  <div id="input-row">
+    <input type="text" placeholder="Type your query..." id="customInput">
+    <button onclick="sendCustom()">Send</button>
+  </div>
+</div>
+
+<script>
+const jsonURL = "twc.json"; // replace with your hosted JSON URL
+
+let nodes = [];
+let currentNode = null;
+
+// Load JSON
+async function loadJSON() {
+  try {
+    const res = await fetch(jsonURL);
+    if(!res.ok) throw new Error("Failed to fetch JSON");
+    const data = await res.json();
+    nodes = data.nodes;
+    showNode(0); // start from first node
+  } catch(err) {
+    alert("Error loading chatbot JSON: " + err.message);
+  }
+}
+
+// Display a node
+function showNode(id) {
+  const node = nodes.find(n => n.id === id);
+  if(!node) return;
+  currentNode = node;
+
+  const chat = document.getElementById("chat-window");
+  const optionsDiv = document.getElementById("options-row");
+  optionsDiv.innerHTML = "";
+
+  // Make heading bold (text before colon)
+  let heading = node.text;
+  let restText = '';
+  if(node.text.includes(':')){
+    const parts = node.text.split(':');
+    heading = parts[0] + ':';
+    restText = parts.slice(1).join(':');
+  }
+
+  const botMsg = document.createElement("div");
+  botMsg.className = "message bot";
+  botMsg.innerHTML = `<b>${heading}</b>${restText ? '<br>' + restText : ''}`;
+  chat.appendChild(botMsg);
+  chat.scrollTop = chat.scrollHeight;
+
+  // Options buttons
+  if(node.options && node.options.length > 0){
+    node.options.forEach(opt => {
+      const btn = document.createElement("button");
+      btn.innerText = opt.label;
+      btn.onclick = () => {
+        // show user message
+        const userMsg = document.createElement("div");
+        userMsg.className = "message user";
+        userMsg.innerText = opt.label;
+        chat.appendChild(userMsg);
+        chat.scrollTop = chat.scrollHeight;
+
+        // go to target node
+        showNode(opt.to);
+      };
+      optionsDiv.appendChild(btn);
+    });
+  }
+}
+
+// Send custom input
+function sendCustom(){
+  const input = document.getElementById("customInput");
+  const val = input.value.trim();
+  if(!val) return;
+  const chat = document.getElementById("chat-window");
+  const userMsg = document.createElement("div");
+  userMsg.className = "message user";
+  userMsg.innerHTML = `<b>You:</b> ${val}`;
+  chat.appendChild(userMsg);
+  chat.scrollTop = chat.scrollHeight;
+  input.value = "";
+  document.getElementById("options-row").innerHTML = "";
+}
+
+window.onload = loadJSON;
+</script>
+
+</body>
+</html>
