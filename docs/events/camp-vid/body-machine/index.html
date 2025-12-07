@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Body Machine Comic-Physics: TWC Classrooms</title>
+<link rel="icon" href="/sa6ang2rha7lay9/1tas2wee1r4sang9/dchdjbbci.webp" type="icon/logo" media="all" />
+<style>
+  /* Add 3D perspective to container */
+  .glass-panel { perspective: 1200px; }
+  :root{
+    --primary:#ff6f61;
+    --accent:#00eaff;
+    --glass-bg: rgba(255,255,255,0.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;height:100vh;background:linear-gradient(135deg,#071028 0%,#001219 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:"Comic Sans MS","Comic Neue",cursive;color:#fff}
+
+  /* 16:9 frame */
+  .video-frame{width:100%;max-width:900px;aspect-ratio:16/9;display:block;aspect-ratio:16/9;display:block}
+  .glass-panel{width:100%;height:100%;border-radius:24px;background:var(--glass-bg);backdrop-filter:blur(12px);position:relative;overflow:hidden;border:2px solid rgba(255,255,255,0.06)}
+
+  /* slide */
+  .slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .6s ease;}
+  .slide.active{opacity:1}
+
+  .slide-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.55) saturate(1.2);transform:scale(1.02)}
+
+  /* group that will be scaled as a unit if needed */
+  .group{position:relative;z-index:3;width:86%;max-width:1200px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none}
+
+  h1{margin:0;padding:0;font-size:3.4vw;color:var(--primary);text-shadow:3px 3px 0 #000;font-weight:900}
+  p{margin:1.2vw 0 0 0;font-size:1.8vw;line-height:1.25;max-width:90%;color:#fff;opacity:0.98}
+
+  /* speech bubble */
+  .speech-bubble{position:relative;width:100%;max-width:1100px;margin:0 auto;padding:2.2% 3%;background:rgba(255,255,255,0.12);border-radius:18px;backdrop-filter:blur(6px);box-shadow:0 8px 30px rgba(0,0,0,0.6);pointer-events:auto}
+
+  /* comic effects */
+  
+  to{transform:scale(1);opacity:1}}
+
+  /* controls below the frame */
+  .controls-wrap{width:100%;max-width:900px;display:flex;justify-content:center;margin-top:18px;display:flex;justify-content:center;margin-top:18px}
+  #controls{display:flex;gap:14px}
+  #controls button{font-family:"Comic Sans MS","Comic Neue",cursive;padding:10px 20px;font-size:1rem;border-radius:12px;border:none;background:linear-gradient(45deg,#ffd54a,#ff6f61);color:#000;font-weight:800;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,0.45);transition:transform .18s}
+  #controls button:hover{transform:translateY(-3px) scale(1.04)}
+
+  /* responsive tweaks */
+  @media (max-width:640px){h1{font-size:6.2vw}p{font-size:3.6vw}.pop{font-size:4.6vw}}
+  .logo{
+    position:absolute;
+    top:12px;
+    left:12px;
+    width:120px;
+    height:auto;
+    z-index:20;
+    filter:drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+    transform-origin:center center;
+    animation: logoSpin 6s linear infinite;
+    transform-style:preserve-3d;
+    perspective:800px;
+  
+  }
+@keyframes logoSpin{
+    from{transform:rotateY(0deg)}
+    to{transform:rotateY(360deg)}
+  }
+    to{transform:rotateY(360deg)}
+  }
+    
+    
+</style>
+</head>
+<body>
+
+<div class="video-frame">
+  <div class="glass-panel" id="panel" aria-live="polite"><img class="logo" src="imager/logo.png" alt="Logo" />
+    </div>
+</div>
+<div class="controls-wrap">
+  <div id="controls">
+    <button id="prevBtn">◀ Prev</button>
+    <button id="playPauseBtn">Play</button>
+    <button id="nextBtn">Next ▶</button>
+  </div>
+</div>
+
+<script>
+// Use DOMContentLoaded to ensure panel exists
+document.addEventListener('DOMContentLoaded', ()=>{
+  const slidesData = [
+   { title: 'Newton Nate and the Motion Mystery', image: 'imager/1_1765045615663.png', text: "Newton Nate appears as Alex jumps out of bed. ⚡ LAW 1: Things don't move unless a muscle pushes them. Your muscles keep you from falling like a floppy noodle! ⚡ LAW 2: Heavier body parts need bigger pushes. Thighs move slower than fingers because they’re heavier. ⚡ LAW 3: Push the ground → the ground pushes you forward. That’s how walking, running, and jumping work! "},
+{ title: 'Captain Lever and the Gigantic Bones', image: 'imager/2_1765045636007.png', text: "Captain Lever shows Alex that: 💥 Bones are levers. 💥 Joints are hinges. 💥 Muscles are ropes that pull. Tiptoe trick: Your feet act like strong second-class levers that lift your whole body! "},
+{ title: 'Attack of the Torque Twins', image: 'imager/3_1765045656539.png', text: "The goofy Torque Twins show Alex: Holding a book far away feels harder because torque increases. The farther the weight → the harder your muscles work! "},
+{ title: 'Doctor Flow Visits the Rivers & Air Tunnels', image: 'imager/4_1765045677088.png', text: "Doctor Flow shrinks Alex and zooms inside the bloodstream. 🌊 Big vessels = fast, smooth flow. 🌊 Small vessels = slow, hard flow (like a tiny straw). In the lungs: Breathing in → chest expands → air rushes in. Breathing out → chest shrinks → air leaves. "},
+{ title: 'Kid Kelvin vs. the Heat Monster', image: 'imager/5_1765045697752.png', text: "Kid Kelvin fights the Heat Monster using: 🔥 Sweating spray (cooling) 🔥 Skin redness (heat release) 🔥 Shivering (heat making). Your body is a superhero thermostat! "},
+{ title: 'Spark the Nerve Saves the Day', image: 'imager/6_1765045718352.png', text: "Spark the Nerve zooms around: ⚡ Sends messages for movement. ⚡ Alerts you to pain. ⚡ Carries taste, touch, and everything you sense. Ions rush in and out of nerves like race cars to send signals! "},
+{ title: 'Lens & Light – Guardians of Vision City', image: 'imager/7_1765045738829.png', text: "Lens & Light explain: 👁 Cornea focuses most light. 👁 Lens fine‑tunes. 👁 Retina catches the picture. 🧠 Brain flips it upright. Vision problems? Myopia = camera too long. Hyperopia = camera too short. "},
+{ title: 'Vibe Maestro and the Muscle Music Club', image: 'imager/8_1765045759274.png', text: "Vibe Maestro reveals: 🎵 Hearing = vibrations → signals. Eardrum shakes → ear bones dance → cochlea water wiggles → hair cells send signals. Voice works like guitar strings: tight = high pitch, loose = deep pitch! "},
+{ title: 'Builder Bones & The Stretch Squad', image: 'imager/9_1765045779698.png', text: "Builder Bones explains: 🦴 Bones = strong beams 💪 Muscles = stretchy motors 🪢 Tendons = ropes 🔗 Ligaments = straps. They keep you moving, standing, and jumping safely! "},
+{ title: 'Captain Float vs. The Gravity Grumps', image: 'imager/10_1765045800470.png', text: "Gravity Grumps pull down. Captain Float lifts up in water. 💧 Water makes you lighter (buoyancy)! ⬇️ Gravity pulls blood into legs, but muscles pump it back up. The adventure continues! "}
+  ];
+
+  const panel = document.getElementById('panel');
+  let current = 0; let playing = false; let timer = null;
+
+  function createSlide(s, idx){
+    const slide = document.createElement('div');
+    slide.className = 'slide';
+    slide.style.zIndex = idx === 0 ? 2 : 1;
+
+    const bg = document.createElement('div');
+    bg.className = 'slide-bg';
+    if(s.image) bg.style.backgroundImage = `url(${s.image})`;
+    slide.appendChild(bg);
+
+    const group = document.createElement('div'); group.className = 'group';
+    const bubble = document.createElement('div'); bubble.className = 'speech-bubble';
+
+    const h = document.createElement('h1'); h.textContent = s.title; bubble.appendChild(h);
+    const p = document.createElement('p'); p.textContent = s.text; bubble.appendChild(p);
+
+    group.appendChild(bubble);
+
+    // optional comic pop icon
+    
+
+    slide.appendChild(group);
+    return slide;
+  }
+
+  // build slides
+  slidesData.forEach((s,i)=>{
+    const sl = createSlide(s,i);
+    if(i===0) sl.classList.add('active');
+    panel.appendChild(sl);
+  });
+
+  function showSlide(n){
+    const slides = panel.querySelectorAll('.slide');
+    if(!slides.length) return;
+    slides[current].classList.remove('active');
+    slides[current].style.zIndex = 1;
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    slides[current].style.zIndex = 2;
+  }
+
+  function next(){ showSlide(current+1); }
+  function prev(){ showSlide(current-1); }
+
+  document.getElementById('nextBtn').addEventListener('click', ()=>{
+    next();
+    if(playing){ clearInterval(timer); timer = setInterval(next,5000); }
+  });
+  document.getElementById('prevBtn').addEventListener('click', ()=>{
+    prev();
+    if(playing){ clearInterval(timer); timer = setInterval(next,5000); }
+  });
+  document.getElementById('playPauseBtn').addEventListener('click', ()=>{
+    const btn = document.getElementById('playPauseBtn');
+    if(playing){ clearInterval(timer); playing=false; btn.textContent='Play'; }
+    else{ playing=true; timer = setInterval(next,5000); btn.textContent='Pause'; }
+  });
+
+  // keyboard
+  window.addEventListener('keydown', (e)=>{
+    if(e.key==='ArrowRight') next();
+    if(e.key==='ArrowLeft') prev();
+    if(e.key===' ') {
+      e.preventDefault();
+      const btn=document.getElementById('playPauseBtn');
+      btn.click();
+    }
+  });
+
+});
+</script>
+
+</body>
+</html>
