@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "csprimarymiddle.html",
+        "topic_name": "Introduction to Computer Science",
+        "alt_text": "Introduction to Computer Science",
+        "image_link": "/path-to-image/cs-intro.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn what computer science is, its importance, and basic concepts of computing."
+    },
+    {
+        "filename": "csprimarymiddle.html",
+        "topic_name": "Basics of Computers",
+        "alt_text": "Basics of Computers",
+        "image_link": "/path-to-image/cs-basics.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Introduction to hardware, software, input/output devices, and basic operations."
+    },
+    {
+        "filename": "csprimarymiddle.html",
+        "topic_name": "Algorithms and Problem Solving",
+        "alt_text": "Algorithms and Problem Solving",
+        "image_link": "/path-to-image/cs-algorithms.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn simple algorithms, logic, and step-by-step problem-solving."
+    },
+    {
+        "filename": "csprimarymiddle.html",
+        "topic_name": "Introduction to Programming",
+        "alt_text": "Introduction to Programming",
+        "image_link": "/path-to-image/cs-programming.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn basic programming concepts using visual or block-based languages."
+    },
+    {
+        "filename": "csprimarymiddle.html",
+        "topic_name": "Data Basics",
+        "alt_text": "Data Basics",
+        "image_link": "/path-to-image/cs-data.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand data types, storage, and basic organization of information."
+    },
+    {
+        "filename": "csprimarymiddle.html",
+        "topic_name": "Digital Citizenship",
+        "alt_text": "Digital Citizenship",
+        "image_link": "/path-to-image/cs-digitalcitizenship.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn safe and responsible use of computers and the internet."
+    }
+]

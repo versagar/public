@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Home",
+    "link": "/"
+  },
+  {
+    "name": "Updates",
+    "link": "/twc/updates",
+    "submenu": [
+      {
+        "name": "Blogs",
+        "link": "blogs"
+      },
+      {
+        "name": "Notifications",
+        "link": "notifications"
+      }
+    ]
+  },
+  {
+"name": "Events",
+"link": "events",
+"submenu": [
+  {
+    "name": "Summer Camp",
+    "link": "/twc/events/summer-camp"
+  }
+]
+  },
+  {
+    "name": "Contact Us",
+    "link": "/twc/contact"
+  }
+]

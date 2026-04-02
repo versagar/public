@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "3dbasictwc.html",
+        "topic_name": "Introduction to 3D Modelling",
+        "alt_text": "Introduction to 3D Modelling",
+        "image_link": "/path-to-image/3d-intro.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn what 3D modelling is, its uses, and basic concepts."
+    },
+    {
+        "filename": "3dbasictwc.html",
+        "topic_name": "3D Modelling Tools and Interface",
+        "alt_text": "3D Modelling Tools and Interface",
+        "image_link": "/path-to-image/3d-tools.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand the tools, navigation, and user interface of 3D modelling software."
+    },
+    {
+        "filename": "3dbasictwc.html",
+        "topic_name": "Basic Shapes and Objects",
+        "alt_text": "Basic Shapes and Objects",
+        "image_link": "/path-to-image/3d-basic-shapes.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn to create basic 3D shapes and manipulate them in a virtual workspace."
+    },
+    {
+        "filename": "3dbasictwc.html",
+        "topic_name": "Transformations and Object Manipulation",
+        "alt_text": "Transformations and Object Manipulation",
+        "image_link": "/path-to-image/3d-transform.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn scaling, rotation, translation, and grouping of 3D objects."
+    },
+    {
+        "filename": "3dbasictwc.html",
+        "topic_name": "Basic Texturing and Coloring",
+        "alt_text": "Basic Texturing and Coloring",
+        "image_link": "/path-to-image/3d-texture.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Apply colors, textures, and simple materials to your 3D objects."
+    },
+    {
+        "filename": "3dbasictwc.html",
+        "topic_name": "Project: Simple 3D Scene",
+        "alt_text": "Project: Simple 3D Scene",
+        "image_link": "/path-to-image/3d-project-basic.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Create a complete 3D scene combining shapes, transformations, and colors."
+    }
+]

@@ -1,0 +1,110 @@
+[
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Introduction to Text-Based Programming",
+        "alt_text": "Introduction to Text-Based Programming",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/intotepr.webp",
+        "id1": "1TZ9IQdbAuOlHyJ3YvYTmOEFgXeFrRNQjyJzqXgd8-18",
+        "id2": "1l7qR0fAgcCh4lGAzKn2PsIb6V6j1hlRFHfGZQHHuzzo",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Variables, Data Types, and Operators",
+        "alt_text": "Variables, Data Types, and Operators",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/vadatyanop.webp",
+        "id1": "19p_Pz2xJTLinV9D5pRdwZi6NFSoi_5xmEDR0FikoQhA",
+        "id2": "1CnGhuF572dPH7wk2dME7szU8UaRgXLu_bvCPnMasr6M",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Control Structures",
+        "alt_text": "Control Structures",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/cost.webp",
+        "id1": "1QChCmeg55p13Y5fY6iDWktFLxvoek4Ai6txALDx8750",
+        "id2": "1jv6z4ausOPuCPGuQy1wyqMkgqmp8y53-Uskxiel9EWA",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Functions and Modular Programming",
+        "alt_text": "Functions and Modular Programming",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/fuanmopr.webp",
+        "id1": "1ox3-ie-qNcE9LCaZMTf9HjV31Stj3HuWI9DW8tWtKEg",
+        "id2": "1Zs0ShnNwPlzux5H_-hIvLZoZCgSJGjwgLSP7Hq1i9rE",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Object-Oriented Programming (OOP)",
+        "alt_text": "Object-Oriented Programming (OOP)",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/obpro.webp",
+        "id1": "16XpkaB54zzxHCJZfw6ZjrndM9J-FI3LcTdJbANXufSE",
+        "id2": "1LJ7Gzq_L0xGyp58PazsDpJi50oeZExq03JsrrmqCwSM",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Working with Files and Databases",
+        "alt_text": "Working with Files and Databases",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/wowifianda.webp",
+        "id1": "1PWAKtd_ZkVKf6DqTH1L1bmPO9S7emQN3I8qD4gioiGs",
+        "id2": "1emYkHgNzQSeGTUOie-ZdhPFQ8c84-QV72WOpvZmCDzQ",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Advanced Data Structures and Algorithms",
+        "alt_text": "Advanced Data Structures and Algorithms",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/addastanal.webp",
+        "id1": "1eJtpbnpKWZEUw5pMXfYLcWtXFsYXtgxtEWdoix9iGF4",
+        "id2": "1lAxQ7w9tcL125QG90A8RAO8VanXxGpH0rAL7m4cZOg0",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Debugging and Error Handling",
+        "alt_text": "Debugging and Error Handling",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/deanerha.webp",
+        "id1": "1imMfX2gWhkjPtrpLaDuOyCr24Q4C5jet_TX83RHntBY",
+        "id2": "1cCLheMzZ0sjtiUmh1ojBaxtWcE8F-udUMxENKr65PjM",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Web Development Fundamentals",
+        "alt_text": "Web Development Fundamentals",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/wedefu.webp",
+        "id1": "1zSkHiVmxTTXVeTKEeyoHZeHKAzbCaEZVkV8y-4z3HC4",
+        "id2": "1qSWP9tZVdTepdCb_b3zcVIh914T6X_GN_1m7mP8HjR0",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Working with APIs",
+        "alt_text": "Working with APIs",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/wowiap.webp",
+        "id1": "1t7j520F59MSWFRQHGDTAaR7Euy4WwVEarJSb-dJPMt0",
+        "id2": "1rXZLx9iSfQRol0lIDLLzi-MKMkJHm470JXIKXVO4KdA",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Advanced Robotics with Text-Based Coding",
+        "alt_text": "Advanced Robotics with Text-Based Coding",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/adrowiteco.webp",
+        "id1": "1TKQfVrS23RXWu0lYHGci9-Q4rzOenvJKLLH3iWShrxw",
+        "id2": "1lM6XJTdiqyR_Mk5PjyXaanMchnsQvSaw7h-Lqj9xx2Y",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "tcodertwc.html",
+        "topic_name": "Final Projects and Practical Applications",
+        "alt_text": "Final Projects and Practical Applications",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/tcoder/fipranprap.webp",
+        "id1": "1jx5AMTLkzxf7UELdDIDYhFD4WS2mlQtOWSf0QWvGLtQ",
+        "id2": "1I0nNBGKcgsiGzvS8DNVh5Y0tdXTaseQ0W2N1nZeQ_18",
+        "short_brief": "short brief"
+    }
+]

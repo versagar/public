@@ -1,0 +1,47 @@
+[
+    {
+        "filename": "csgeneralcustom.html",
+        "topic_name": "Customized Curriculum Overview",
+        "alt_text": "Customized Curriculum Overview",
+        "image_link": "/path-to-image/cs-customcurriculum.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Tailor computer science lessons for NIOS, CBSE, ICSE, IB, or any state board."
+    },
+    {
+        "filename": "csgeneralcustom.html",
+        "topic_name": "Integrated Topics",
+        "alt_text": "Integrated Topics",
+        "image_link": "/path-to-image/cs-integrated.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Combine primary, middle, secondary, and advanced computer science topics for students."
+    },
+    {
+        "filename": "csgeneralcustom.html",
+        "topic_name": "Project-Based Learning",
+        "alt_text": "Project-Based Learning",
+        "image_link": "/path-to-image/cs-projects.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Hands-on projects like games, apps, or small programs to apply CS concepts practically."
+    },
+    {
+        "filename": "csgeneralcustom.html",
+        "topic_name": "Problem-Solving & Skills",
+        "alt_text": "Problem-Solving & Skills",
+        "image_link": "/path-to-image/cs-skills.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Develop analytical thinking, debugging, and logical reasoning skills."
+    },
+    {
+        "filename": "csgeneralcustom.html",
+        "topic_name": "Capstone Project",
+        "alt_text": "Capstone Project",
+        "image_link": "/path-to-image/cs-capstone.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Final personalized project combining all learned CS concepts for practical use."
+    }
+]

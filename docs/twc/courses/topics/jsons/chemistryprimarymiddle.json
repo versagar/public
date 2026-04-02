@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "chemistryprimarymiddle.html",
+        "topic_name": "Introduction to Chemistry",
+        "alt_text": "Introduction to Chemistry",
+        "image_link": "/path-to-image/chem-intro.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand what chemistry is, its importance, and basic concepts."
+    },
+    {
+        "filename": "chemistryprimarymiddle.html",
+        "topic_name": "States of Matter",
+        "alt_text": "States of Matter",
+        "image_link": "/path-to-image/states-matter.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn about solids, liquids, gases, and basic properties of matter."
+    },
+    {
+        "filename": "chemistryprimarymiddle.html",
+        "topic_name": "Elements and Compounds",
+        "alt_text": "Elements and Compounds",
+        "image_link": "/path-to-image/elements-compounds.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Introduction to elements, compounds, and simple chemical formulas."
+    },
+    {
+        "filename": "chemistryprimarymiddle.html",
+        "topic_name": "Basic Chemical Reactions",
+        "alt_text": "Basic Chemical Reactions",
+        "image_link": "/path-to-image/chemical-reactions.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand simple chemical reactions, signs of reaction, and examples."
+    },
+    {
+        "filename": "chemistryprimarymiddle.html",
+        "topic_name": "Acids, Bases and Salts",
+        "alt_text": "Acids, Bases and Salts",
+        "image_link": "/path-to-image/acids-bases-salts.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn about acids, bases, pH, and common salts."
+    },
+    {
+        "filename": "chemistryprimarymiddle.html",
+        "topic_name": "Safety in Chemistry",
+        "alt_text": "Safety in Chemistry",
+        "image_link": "/path-to-image/chem-safety.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Basic lab safety and proper handling of chemicals."
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "filename": "melecttwc.html",
+        "topic_name": "Introduction to Control Systems",
+        "alt_text": "Introduction to Control Systems",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/melect/intocosy.webp",
+        "id1": "1mQkHLcXxq8No1OuBIsqUQ81ZeIuHGMP2wCKx9t-LqQU",
+        "id2": "1vf3c5ZZtQ45GtYI2rb-LQNle4aKh7_EFXetI60ObCHw",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "melecttwc.html",
+        "topic_name": "Microcontrollers Basics",
+        "alt_text": "Microcontrollers Basics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/melect/miba.webp",
+        "id1": "1RaYdA_nZaZ1OgIGUgilbWjiQPnALfvNi5TS1Cx-Lkvo",
+        "id2": "1epVVx2bUBJUgIeYbs6PfgolOMz1_LEKfj2svkJrebIw",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "melecttwc.html",
+        "topic_name": "Advanced Microcontroller Programming",
+        "alt_text": "Advanced Microcontroller Programming",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/melect/admipr.webp",
+        "id1": "1su6gwoBVF-ELtTUQ8HIci03fQV8-Ut6W_u_Ar8BzPrY",
+        "id2": "1Y1BhTs5szg6UXURQbit9RclCu1E4ylZky3CSsa6r8Wc",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "melecttwc.html",
+        "topic_name": "Sensor Integration and Data Acquisition",
+        "alt_text": "Sensor Integration and Data Acquisition",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/melect/seinandaac.webp",
+        "id1": "1knK3tgL2kzfq0r3Hl14G6Czg9Ev9E89U6uRzZZh5O8E",
+        "id2": "1cVqfoyUAOJEMtDAtrEoaRiyw7B0-P98j_eWSRy6oly8",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "melecttwc.html",
+        "topic_name": "Building and Programming Automated Systems",
+        "alt_text": "Building and Programming Automated Systems",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/melect/buanprausy.webp",
+        "id1": "1TUyFQrpWlnJlaNl3N-UiXj_EviBg4AhwZtH3jjJsySQ",
+        "id2": "1Tj9UWi7vritwvQ9jnRr170HeJRFykWtb6SnxSZbvF9Q",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "melecttwc.html",
+        "topic_name": "Control Systems Design",
+        "alt_text": "Control Systems Design",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/melect/cosyde.webp",
+        "id1": "11N9WTWWoL-XTOAdXh0Fz0Lg8YWxxOfLhfjOmc5r0-Sc",
+        "id2": "1qifqtxjSl2sUCaTDGS7HG71ds3s1atHOYkfXsqDj7aI",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "melecttwc.html",
+        "topic_name": "Networking Microcontrollers",
+        "alt_text": "Networking Microcontrollers",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/melect/nemi.webp",
+        "id1": "1Yyz4axMXEFkyYipODeytpKISFESjoAWFO5y7r1u1vuQ",
+        "id2": "1KSfX4lIqQEjXUTl36H_cgg4RCIsg89p0xoHf1kRzKec",
+        "short_brief": "short brief"
+    }
+]

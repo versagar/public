@@ -1,0 +1,218 @@
+[
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Introduction to Physics",
+        "alt_text": "Introduction to Physics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/intoph.webp",
+        "id1": "16M4mKnRCNHVCcMmf08VZkibletQFR3IhrTc0oDSBs0c",
+        "id2": "1LwAUVvUeDvELs0SjwHfazcOYqGN8CjbV8tLykV833xQ",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Classical Mechanics",
+        "alt_text": "Classical Mechanics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/clme.webp",
+        "id1": "1K6iphuMBr-LYyuRJ4Kk_T964Zp7fKBZma8fBXFqyO8A",
+        "id2": "1KNHaZxxwKuyHXFzSD-pm1HmhSnn9gKkuGFyAe5-Rdus",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Waves and Oscillations",
+        "alt_text": "Waves and Oscillations",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/waanos.webp",
+        "id1": "1BmXcYECBLRmA3RDu7N63WvNehEYSJzR0CRXlCfau_hA",
+        "id2": "1t2Jzz39HGDXBXdU4uRqKbKgzbbo3Bd78agAeQ5voWcE",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Thermodynamics",
+        "alt_text": "Thermodynamics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/th.webp",
+        "id1": "1dRKNpkdC2qDvhzWvTCFv5cNqZiyfj3eAL5Gfl35yuZM",
+        "id2": "1TyCOXvCdPRlH5ZtdzTenGv97PKyULWshlHUh0nne83E",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Properties of Matter",
+        "alt_text": "Properties of Matter",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/profma.webp",
+        "id1": "1-I1d8qnm4ctomJNDC6MgAKU0rvrKOxmhDu1q-fJaZkc",
+        "id2": "1zak-W03SrbkYS6cj3JQAWnYHhCnAEp4L8K0ekVgJSs8",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Optics",
+        "alt_text": "Optics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/op.webp",
+        "id1": "132AH79SAtU0SU_YHxc10oWty5d9bJpkTX_8RZlzoSdg",
+        "id2": "1i5cJRy28rf5_7mvyJgFcZ-kncOGHKH8Driaqy2tO0uI",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Electromagnetism",
+        "alt_text": "Electromagnetism",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/el.webp",
+        "id1": "1PjceEQyDJiaJDMpUxTTPSFlhiQTeMc5iMfCYQ_kr59Y",
+        "id2": "1MyT6Nb-R2ogcuWS74JxqXG3pzryE1g5kouN-D8X2cxk",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Modern Physics",
+        "alt_text": "Modern Physics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/moph.webp",
+        "id1": "1scyH0uJpr7eP6xTP_rlRIEPIA7gEt4indIUUqDjVZ2Y",
+        "id2": "1pg5i7gIoE8RlH3nEhyftD9zpjXYATGKVfFdOidtySP4",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Condensed Matter Physics",
+        "alt_text": "Condensed Matter Physics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/comaph.webp",
+        "id1": "1rvMzObd5rr1LezLSRVsi38jwBWanDMHHV23Se55m6cE",
+        "id2": "1Q-iViW0UAkQbhTFSq-EF7Wpd-_VdUSOeEtKGlgROUns",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Fluid Mechanics",
+        "alt_text": "Fluid Mechanics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/flme.webp",
+        "id1": "1BcEKSd9q_pPlPX_RDnP9FjKSo269rZvnheOGNLqW9jA",
+        "id2": "1C5lKvUsjy7UNSf3WHn9yLw9xDLnx2ktwmJOzQBENR_Q",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Acoustics",
+        "alt_text": "Acoustics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/ac.webp",
+        "id1": "1sIrIabnLev3LiB19vFlurZJsR113zt0miNdHiAwCHH4",
+        "id2": "1CF2kIErDTXZmu3H0ANHdIXy405E-b8-bS4VnAwn9khU",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Astrophysics",
+        "alt_text": "Astrophysics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/as.webp",
+        "id1": "12127H3LobgypuQ02M-v98gnP1IVzSPQz9IUrJbkr52E",
+        "id2": "1wmlLeh0yWo8lZ9FBTdqdjkXz0FFolfxFr7JeRn8qVaE",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Applied Physics and Technology",
+        "alt_text": "Applied Physics and Technology",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/apphante.webp",
+        "id1": "1CM5kmR3e1sjgFuQkNe7pCthfTNRLtCElwlHkyNuy4HU",
+        "id2": "1mWXZhhFHC_BodcVkjiDgdFH3lOtjLvuj7CWnQEfPkvo",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Plasma Physics",
+        "alt_text": "Plasma Physics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/plph.webp",
+        "id1": "1Y0LNwf8QRWoXsxQOyW2i_C6oi2vPwlmf9VA6R4XWwmg",
+        "id2": "1sKoUUy7qktdCWGdanyVlwDY3bJ-oxGphFyaBhOf8jZk",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Relativity and Quantum Mechanics",
+        "alt_text": "Relativity and Quantum Mechanics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/reanqume.webp",
+        "id1": "1LOwt4tiChgNATQpbBKYT40eE1n9309yw4zxpQbwCIbU",
+        "id2": "11KX0zbxidSPhZGUvDw7wpdp-Y_l6xHntNsRGq8akQQU",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Exploratory Frontiers in Physics",
+        "alt_text": "Exploratory Frontiers in Physics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/exfrinph.webp",
+        "id1": "1eBWqQ1KPGcXOa22vqUv-9HyJ6ONI_fasX8fWxdE6zKU",
+        "id2": "1JaBkbUEmgRcVXVhqvyMJSWg6rzRvu0PN_qv3kw0NwU4",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Computational Physics",
+        "alt_text": "Computational Physics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/coph.webp",
+        "id1": "16W0lU7YWy3hlF_W_rIOJfby1iL0E6t83QwoFdyKpZfQ",
+        "id2": "13Oc3ockmneM4hKmzdmvtUeVfsWKAKPlQPB_ApsKZjHw",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Nuclear Physics",
+        "alt_text": "Nuclear Physics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/nuph.webp",
+        "id1": "1JSjM5CMul1i2t72U_KkrI6HtzRxYurYunFpdjDJPEF8",
+        "id2": "1NBGNC5z7X0CZ1mPbS0aEdGjbRgtausrvKWloxkRgPB0",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "High Energy Physics (Particle Physics)",
+        "alt_text": "High Energy Physics (Particle Physics)",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/hienphpph.webp",
+        "id1": "1ZpfXy5LbCyYHhu96TpQRqXMFrWouUjwcF2tgwDHAb1E",
+        "id2": "1sWBhjdjsA-f5aMw0YUoIoNWb8OusGcSZ5zMDgfQVTgQ",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Geophysics",
+        "alt_text": "Geophysics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/ge.webp",
+        "id1": "1_228wS_FhHzV16s7Acv1thdGjM1j-cVckz8tEL1ME9k",
+        "id2": "1FuxE2_gxyIRlcIgJzsLWrO15y-JbRljka3duCaRL47E",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Biophysics",
+        "alt_text": "Biophysics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/bi.webp",
+        "id1": "10vqV5x2mB1Sts2bvG7Uly54zwpOOqchheP03A2Sp9IY",
+        "id2": "1h5VjBbdaPKpC3x1o48a7wsM3W7gDpyausXrDbG73prA",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Quantum Field Theory (QFT)",
+        "alt_text": "Quantum Field Theory (QFT)",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/qufithq.webp",
+        "id1": "15-YgDGXVtZ2Pp-DFgDw7OXcFcqBwzmF8XDlzUjW2s_Q",
+        "id2": "1obYZ2sZL5reNVGUNYj-DBNXHca967TS-B4VI_3ts1Lk",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Environmental Physics",
+        "alt_text": "Environmental Physics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/enph.webp",
+        "id1": "186pnIvwIryJKNkYCMuC2-2oGRDVIcNNS53iZm-iRM1o",
+        "id2": "1jNi3Yf0Pg5yph1mlYZaJxrg63otcGwJzzxS-NfRQK20",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "phgentwc.html",
+        "topic_name": "Physics of Complex Systems",
+        "alt_text": "Physics of Complex Systems",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/phgen/phofcosy.webp",
+        "id1": "1PYJ7s7ENaZ8dHl3LT9bKCe7iMGfaSWilp62Q4lmsdzs",
+        "id2": "1O6PtnORgmzp63Ru-yjPWIrGkXt8CuYehuPQ211EQvEA",
+        "short_brief": "short brief"
+    }
+]

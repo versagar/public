@@ -1,0 +1,47 @@
+[
+    {
+        "filename": "chemistrygeneralcustom.html",
+        "topic_name": "Customized Curriculum Overview",
+        "alt_text": "Customized Curriculum Overview",
+        "image_link": "/path-to-image/custom-chemistry.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Tailor chemistry lessons for NIOS, CBSE, ICSE, IB, or any state board."
+    },
+    {
+        "filename": "chemistrygeneralcustom.html",
+        "topic_name": "Integrated Topics",
+        "alt_text": "Integrated Topics",
+        "image_link": "/path-to-image/integrated-chemistry.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Combine primary, middle, secondary, and advanced chemistry topics for students."
+    },
+    {
+        "filename": "chemistrygeneralcustom.html",
+        "topic_name": "Project-Based Learning",
+        "alt_text": "Project-Based Learning",
+        "image_link": "/path-to-image/chem-projects.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Hands-on experiments and projects to apply chemistry concepts practically."
+    },
+    {
+        "filename": "chemistrygeneralcustom.html",
+        "topic_name": "Problem-Solving & Skills",
+        "alt_text": "Problem-Solving & Skills",
+        "image_link": "/path-to-image/chem-skills.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Enhance analytical, logical, and problem-solving skills in chemistry learning."
+    },
+    {
+        "filename": "chemistrygeneralcustom.html",
+        "topic_name": "Capstone Project",
+        "alt_text": "Capstone Project",
+        "image_link": "/path-to-image/chem-capstone.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Final practical project integrating all chemistry concepts for assessment and learning."
+    }
+]

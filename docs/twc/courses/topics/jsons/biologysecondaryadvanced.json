@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "biologysecondaryadvanced.html",
+        "topic_name": "Advanced Cell Biology",
+        "alt_text": "Advanced Cell Biology",
+        "image_link": "/path-to-image/cell-advanced.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Study detailed cell structures, organelles, and their functions."
+    },
+    {
+        "filename": "biologysecondaryadvanced.html",
+        "topic_name": "Genetics and Heredity",
+        "alt_text": "Genetics and Heredity",
+        "image_link": "/path-to-image/genetics-advanced.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn Mendelian laws, DNA structure, and inheritance patterns."
+    },
+    {
+        "filename": "biologysecondaryadvanced.html",
+        "topic_name": "Plant Physiology",
+        "alt_text": "Plant Physiology",
+        "image_link": "/path-to-image/plant-physiology-advanced.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Study photosynthesis, transpiration, and plant growth mechanisms."
+    },
+    {
+        "filename": "biologysecondaryadvanced.html",
+        "topic_name": "Human Anatomy & Physiology",
+        "alt_text": "Human Anatomy & Physiology",
+        "image_link": "/path-to-image/human-physiology-advanced.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "In-depth study of human body systems, their functions, and interactions."
+    },
+    {
+        "filename": "biologysecondaryadvanced.html",
+        "topic_name": "Microorganisms and Biotechnology",
+        "alt_text": "Microorganisms and Biotechnology",
+        "image_link": "/path-to-image/microorganisms-biotech.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Study bacteria, viruses, and applications of biotechnology in medicine and agriculture."
+    },
+    {
+        "filename": "biologysecondaryadvanced.html",
+        "topic_name": "Ecology and Evolution",
+        "alt_text": "Ecology and Evolution",
+        "image_link": "/path-to-image/ecology-evolution.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn about ecosystems, biodiversity, and evolutionary theory."
+    }
+]

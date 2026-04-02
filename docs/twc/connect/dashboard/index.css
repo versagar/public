@@ -1,0 +1,105 @@
+.dashboard {
+  font-family: Inter, Arial, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+.remove-profile {
+    align-content: end;
+}
+.tab-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab.active {
+  border-bottom: 3px solid currentColor;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.about-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress {
+  height: 100%;
+  background: #4caf50;
+}
+
+.performance-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 60px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.bar {
+  background: #ddd;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #2196f3;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.lesson {
+  margin-bottom: 16px;
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status.completed { color: green; }
+.status.in-progress { color: orange; }
+.status.pending { color: red; }
+
+
+.ds1 { background: #f5f7fa; color: #333; }
+.ds2 { background: #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.ds3 { background: #1e1e2f; color: #f1f1f1; }
+.ds3 .progress { background: #6c63ff; }
+.ds4 { background: #fff8f0; color: #5d4037; }
+.ds5 { background: linear-gradient(135deg,#667eea,#764ba2); color: #fff; }

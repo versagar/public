@@ -1,0 +1,11 @@
+name,label,type,placeholder,required,options,lclasses,iclasses,min,max,pattern
+student_name,Student Name,text,Enter student full name,r,,,,
+guardian_name,Guardian Name,text,Enter guardian full name,r,,,,
+contact_number,Contact Number,text,10-digit mobile number,r,,,,"^[0-9]{10}$"
+contact_email,Contact Email,email,you@example.com,r,,,,
+student_age,Student Age,text,Enter age in years and month,r,,,,
+current_study,Current Study,textarea,e.g. Grade 9 – CBSE / NIOS,r,,,,
+area_of_interest,Area of Interest,select,,r,"Robotics|AI & ML|Coding|Electronics|Mathematics|Physics|Other",,,
+demo_location,Demo Location,select,,r,"Online|At Student Location|At Center",,,
+availability,Availability,text,e.g. Weekdays 4–7 PM,r,,,,
+comment, Comment / Suggestions / Additional Details,textarea,Type here...,,,

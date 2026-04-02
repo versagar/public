@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "cssecondaryadvanced.html",
+        "topic_name": "Advanced Programming Concepts",
+        "alt_text": "Advanced Programming Concepts",
+        "image_link": "/path-to-image/cs-advancedprogramming.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn variables, data types, loops, conditionals, and functions in text-based languages."
+    },
+    {
+        "filename": "cssecondaryadvanced.html",
+        "topic_name": "Data Structures & Algorithms",
+        "alt_text": "Data Structures & Algorithms",
+        "image_link": "/path-to-image/cs-dsa.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Study arrays, lists, stacks, queues, sorting, and searching algorithms."
+    },
+    {
+        "filename": "cssecondaryadvanced.html",
+        "topic_name": "Object-Oriented Programming",
+        "alt_text": "Object-Oriented Programming",
+        "image_link": "/path-to-image/cs-oop.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn about classes, objects, inheritance, and encapsulation in programming."
+    },
+    {
+        "filename": "cssecondaryadvanced.html",
+        "topic_name": "Databases and SQL",
+        "alt_text": "Databases and SQL",
+        "image_link": "/path-to-image/cs-database.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Introduction to databases, tables, and basic SQL queries."
+    },
+    {
+        "filename": "cssecondaryadvanced.html",
+        "topic_name": "Web Development Basics",
+        "alt_text": "Web Development Basics",
+        "image_link": "/path-to-image/cs-webdev.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn HTML, CSS, and basic JavaScript for creating web pages."
+    },
+    {
+        "filename": "cssecondaryadvanced.html",
+        "topic_name": "Computer Networks Basics",
+        "alt_text": "Computer Networks Basics",
+        "image_link": "/path-to-image/cs-networks.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand basic networking concepts, protocols, and internet structure."
+    }
+]

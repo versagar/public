@@ -1,0 +1,14 @@
+name,label,type,placeholder,required,options,lclasses,iclasses,min,max,pattern
+student_name,Student Name,text,Enter student full name,r,,,,,
+guardian_name,Guardian Name,text,Enter guardian full name,r,,,,,
+contact_number,Contact Number,text,10-digit mobile number,r,,,,,"^[0-9]{10}$"
+contact_email,Contact Email,email,you@example.com,r,,,,,
+student_age,Student Age,text,Select DOB First,r,,,readonly,,,
+current_study,Current Study,textarea,e.g. Grade 9 – CBSE / NIOS,r,,,,,
+area_of_interest,Area of Interest,select,,r,"Robotics|AI & ML|Coding|Electronics|Mathematics|Physics|Other",,,
+student_dob,DOB (Student),date,Select date of birth,r,,,,,
+student_contact, Contact No. (Student)<button class="btn pad3 round3">Same as Guardian's Contact No.</button>,text,10-digit mobile number,,,,,,
+student_email,Contact Email (Student) <button class="btn pad3 round3">Same as Guardian's Email</button>,email,student@example.com,,,,,,
+current_school,Current School,text,Enter school name,,,,,,
+address,Address,textarea,Your address here... ,,,,,,
+comment,Comment / Suggestions / Additional Details,textarea,Type here...,,,,,,

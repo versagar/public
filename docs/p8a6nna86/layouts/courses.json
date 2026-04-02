@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Robotics",
+    "link": "robotics",
+    "category": "skill-development",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/image_1737731478309.webp",
+    "subtitle": "Designing, Building, and Programming Robots!",
+    "description": "Learn how to build and program robots that move, sense, and interact with their environment using mechanical systems and coding."
+  },
+  {
+    "name": "Coding",
+    "link": "coding",
+    "category": "skill-development",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/image_1737798244114.webp",
+    "subtitle": "From Visual Blocks to Advanced Programming!",
+    "description": "Start coding with block-based tools and progress to advanced text-based programming, algorithms, and real-world problem solving."
+  },
+  {
+    "name": "ML/AI",
+    "link": "ml-ai",
+    "category": "skill-development",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/image_1737796800892.webp",
+    "subtitle": "Teaching Machines to Think!",
+    "description": "Explore the basics of Machine Learning and Artificial Intelligence, including logical thinking, automation, and smart systems."
+  },
+  {
+    "name": "Electronics",
+    "link": "electronics",
+    "category": "skill-development",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/Electronics_ Basic Components and Circuits 1737881841820.webp",
+    "subtitle": "From Circuits to Smart Devices!",
+    "description": "Understand electronic components, circuits, control systems, and microcontrollers used in gadgets and robots."
+  },
+  {
+    "name": "3D Modelling",
+    "link": "3d",
+    "category": "skill-development",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/image_1737735597051.webp",
+    "subtitle": "Designing in Three Dimensions!",
+    "description": "Learn to design 3D models and objects used in engineering, robotics, and product design using modern tools."
+  },
+  {
+    "name": "Physics",
+    "link": "phy",
+    "category": "academic-learning",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/image_1737731242043.webp",
+    "subtitle": "Understanding How the World Works!",
+    "description": "Study physics from basic to advanced levels, covering motion, energy, electricity, waves, and modern physics concepts."
+  },
+  {
+    "name": "Chemistry",
+    "link": "chem",
+    "category": "academic-learning",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/Logical Reasoning 1737890569347.webp",
+    "subtitle": "Exploring Matter and Reactions!",
+    "description": "Learn the fundamentals of chemistry, including elements, compounds, reactions, and real-world chemical applications."
+  },
+  {
+    "name": "Biology",
+    "link": "bio",
+    "category": "academic-learning",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/Middle School Physics 1737891286533.webp",
+    "subtitle": "Discovering Life and Living Systems!",
+    "description": "Explore the science of life, from cells and organisms to ecosystems and human biology."
+  },
+  {
+    "name": "Mathematics",
+    "link": "maths",
+    "category": "academic-learning",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/image_1737796655791.webp",
+    "subtitle": "From Basics to Advanced Problem Solving!",
+    "description": "Build strong mathematical foundations and advance through algebra, geometry, and higher-level problem solving."
+  },
+  {
+    "name": "Computer Science",
+    "link": "cs",
+    "category": "academic-learning",
+    "image": "/san9g3rah345alay/tas3w34ee89r/courses/overviews/Computer Hardware and Peripherals 1737858619862.webp",
+    "subtitle": "Understanding Computers Inside and Out!",
+    "description": "Learn computer fundamentals including hardware, operating systems, software, and core computing concepts."
+  }
+]

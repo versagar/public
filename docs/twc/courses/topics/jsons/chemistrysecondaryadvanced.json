@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "chemistrysecondaryadvanced.html",
+        "topic_name": "Atomic Structure",
+        "alt_text": "Atomic Structure",
+        "image_link": "/path-to-image/atomic-structure.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Study atoms, subatomic particles, and electronic configuration."
+    },
+    {
+        "filename": "chemistrysecondaryadvanced.html",
+        "topic_name": "Periodic Table and Elements",
+        "alt_text": "Periodic Table and Elements",
+        "image_link": "/path-to-image/periodic-table.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn periodic classification of elements, groups, and periods."
+    },
+    {
+        "filename": "chemistrysecondaryadvanced.html",
+        "topic_name": "Chemical Bonding",
+        "alt_text": "Chemical Bonding",
+        "image_link": "/path-to-image/chemical-bonding.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand ionic, covalent, and metallic bonds with examples."
+    },
+    {
+        "filename": "chemistrysecondaryadvanced.html",
+        "topic_name": "Stoichiometry and Reactions",
+        "alt_text": "Stoichiometry and Reactions",
+        "image_link": "/path-to-image/stoichiometry.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Study mole concept, balancing equations, and reaction calculations."
+    },
+    {
+        "filename": "chemistrysecondaryadvanced.html",
+        "topic_name": "Acids, Bases, and Electrochemistry",
+        "alt_text": "Acids, Bases, and Electrochemistry",
+        "image_link": "/path-to-image/acid-base-electrochem.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Advanced study of pH, indicators, electrolytes, and electrochemical cells."
+    },
+    {
+        "filename": "chemistrysecondaryadvanced.html",
+        "topic_name": "Organic Chemistry Basics",
+        "alt_text": "Organic Chemistry Basics",
+        "image_link": "/path-to-image/organic-chem.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Introduction to hydrocarbons, functional groups, and simple reactions."
+    }
+]

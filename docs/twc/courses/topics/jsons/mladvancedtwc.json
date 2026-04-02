@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "mladvancedtwc.html",
+        "topic_name": "Advanced Supervised Learning Techniques",
+        "alt_text": "Advanced Supervised Learning Techniques",
+        "image_link": "/path-to-image/advanced-supervised.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn advanced regression, classification, and model optimization methods."
+    },
+    {
+        "filename": "mladvancedtwc.html",
+        "topic_name": "Neural Networks and Deep Learning",
+        "alt_text": "Neural Networks and Deep Learning",
+        "image_link": "/path-to-image/neural-networks.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand neural networks, deep learning, and building multi-layer models."
+    },
+    {
+        "filename": "mladvancedtwc.html",
+        "topic_name": "Natural Language Processing",
+        "alt_text": "Natural Language Processing",
+        "image_link": "/path-to-image/nlp.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn to process and analyze text data using NLP techniques."
+    },
+    {
+        "filename": "mladvancedtwc.html",
+        "topic_name": "Computer Vision",
+        "alt_text": "Computer Vision",
+        "image_link": "/path-to-image/computer-vision.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Explore image and video data processing using ML techniques."
+    },
+    {
+        "filename": "mladvancedtwc.html",
+        "topic_name": "Reinforcement Learning",
+        "alt_text": "Reinforcement Learning",
+        "image_link": "/path-to-image/reinforcement-learning.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn how agents can learn from environment interactions to make decisions."
+    },
+    {
+        "filename": "mladvancedtwc.html",
+        "topic_name": "Capstone Project: AI Application",
+        "alt_text": "Capstone Project: AI Application",
+        "image_link": "/path-to-image/ml-project-advanced.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Develop a full AI/ML project combining all advanced techniques."
+    }
+]

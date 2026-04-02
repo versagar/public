@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "3dadvancedtwc.html",
+        "topic_name": "Advanced Modelling Techniques",
+        "alt_text": "Advanced Modelling Techniques",
+        "image_link": "/path-to-image/3d-advanced-techniques.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn advanced techniques like sculpting, extrusion, and mesh editing."
+    },
+    {
+        "filename": "3dadvancedtwc.html",
+        "topic_name": "Lighting and Rendering",
+        "alt_text": "Lighting and Rendering",
+        "image_link": "/path-to-image/3d-lighting.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand how to apply lights and render realistic 3D models."
+    },
+    {
+        "filename": "3dadvancedtwc.html",
+        "topic_name": "Texturing, Materials, and Shading",
+        "alt_text": "Texturing, Materials, and Shading",
+        "image_link": "/path-to-image/3d-materials.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Apply realistic textures, materials, and shaders to your 3D models."
+    },
+    {
+        "filename": "3dadvancedtwc.html",
+        "topic_name": "Animation Basics",
+        "alt_text": "Animation Basics",
+        "image_link": "/path-to-image/3d-animation.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Animate your models using keyframes and simple motion principles."
+    },
+    {
+        "filename": "3dadvancedtwc.html",
+        "topic_name": "3D Printing Preparation",
+        "alt_text": "3D Printing Preparation",
+        "image_link": "/path-to-image/3d-printing-prep.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn how to prepare and export 3D models for 3D printing."
+    },
+    {
+        "filename": "3dadvancedtwc.html",
+        "topic_name": "Capstone Project: Complete 3D Model",
+        "alt_text": "Capstone Project: Complete 3D Model",
+        "image_link": "/path-to-image/3d-project-advanced.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Create a complete 3D model with advanced textures, lighting, and animation."
+    }
+]

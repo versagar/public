@@ -1,0 +1,121 @@
+[
+  {
+"name": "Links",
+"link": "",
+"submenu": [
+ {
+    "name": "TWC Home",
+    "link": "/twc"
+  },
+  {
+"name": "Physer Home",
+    "link": "/"
+  },
+  {
+    "name": "Updates",
+    "link": "/twc/updates",
+    "submenu": [
+      {
+        "name": "Blogs",
+        "link": "blogs"
+      },
+      {
+        "name": "Notifications",
+        "link": "notifications"
+      }
+    ]
+  },
+  {
+"name": "Events",
+"link": "/twc/events",
+"submenu": [
+  {
+    "name": "Summer Camp",
+    "link": "summer-camp"
+  }
+]
+  },
+  {
+    "name": "Contact Us",
+    "link": "/twc/contact"
+  }
+]
+  },
+ 
+  {
+    "name": "Join Us",
+    "link": "/twc/connect",
+    "submenu": [
+      {
+        "name": "Registration",
+        "link": "registration"
+      },
+      {
+        "name": "Dashboard",
+        "link": "dashboard"
+      },
+      {
+        "name": "Schedule Classes",
+        "link": "schedule"
+      }
+    ]
+  },
+  {
+    "name": "Courses",
+    "link": "/twc/courses",
+    "submenu": [
+      {
+        "name": "Skill Development",
+        "link": "skill-development",
+        "submenu": [
+          {
+            "name": "Robotics",
+            "link": "robotics"
+          },
+          {
+            "name": "Coding",
+            "link": "coding"
+          },
+          {
+            "name": "ML/AI",
+            "link": "ml-ai"
+          },
+          {
+            "name": "Electronics",
+            "link": "electronics"
+          },
+          {
+            "name": "3D Modelling",
+            "link": "3d"
+          }
+        ]
+      },
+      {
+        "name": "Academic Learning",
+        "link": "academic-learning",
+        "submenu": [
+          {
+            "name": "Physics",
+            "link": "phy"
+          },
+          {
+            "name": "Chemistry",
+            "link": "chem"
+          },
+          {
+            "name": "Biology",
+            "link": "bio"
+          },
+          {
+            "name": "Mathematics",
+            "link": "maths"
+          },
+          {
+            "name": "Computer Science",
+            "link": "cs"
+          }
+        ]
+      }
+    ]
+  }
+]

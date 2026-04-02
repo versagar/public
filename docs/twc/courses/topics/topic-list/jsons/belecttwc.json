@@ -1,0 +1,74 @@
+[
+    {
+        "filename": "belecttwc.html",
+        "topic_name": "Introduction to Electronics",
+        "alt_text": "Introduction to Electronics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/belect/intoel.webp",
+        "id1": "1TFE5TiBlx6lYwipK9Kx5AGbA9MM8x6GrGWYNdQJwfjg",
+        "id2": "1KLBoqMoxyenN-1Y4l-59F9mdx6lyInJWtElvWzGeh84",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "belecttwc.html",
+        "topic_name": "Basic Electronic Components",
+        "alt_text": "Basic Electronic Components",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/belect/baelco.webp",
+        "id1": "142fT1vGIH9mV6B5ZFPZg8gqDYb1eq8UPFl9n1c9dtOQ",
+        "id2": "1IT_CWP24Fd3z270bR8kom8ttzmZL96Uik3evj5Kwxs0",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "belecttwc.html",
+        "topic_name": "Building Simple Circuits",
+        "alt_text": "Building Simple Circuits",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/belect/busici.webp",
+        "id1": "1zeWqJb1ES0mnSXZ39gJ91EI0iWGS-nQr5-gE6vna28Q",
+        "id2": "1GJttONJq3TQkCNkvk2Smjj6EKVBCgvjzihoqRteVUY4",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "belecttwc.html",
+        "topic_name": "Understanding Ohm's Law",
+        "alt_text": "Understanding Ohm's Law",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/belect/unohla.webp",
+        "id1": "1sazwlebXRTNvz-SRLCrQXQFvxBVylz04xsYsYEZuJvQ",
+        "id2": "1POCxmnrTWPMoCa2Gn8ywQQF9mXdA4-_CWa1iBxU6HdM",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "belecttwc.html",
+        "topic_name": "Advanced Circuit Design",
+        "alt_text": "Advanced Circuit Design",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/belect/adcide.webp",
+        "id1": "1EBJD7W0yVjHN9yJz99YzeAYXGiNVFCXYYUH5ZLZkEkQ",
+        "id2": "1gS5Drc32oy7vcR_eQY0OygQc60j3CiR7NXe5hnjSKqY",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "belecttwc.html",
+        "topic_name": "Soldering and Building Advanced Circuits",
+        "alt_text": "Soldering and Building Advanced Circuits",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/belect/soanbuadci.webp",
+        "id1": "1K4RS0G5zQTGFmuIqKh-F3IQqG3lz_-Fex5logvniMJ4",
+        "id2": "1LS3_40rn4rFNKJ2SN9jx2-hQGRSmrxpXXQ6lzeAKrEk",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "belecttwc.html",
+        "topic_name": "Power Systems and Renewable Energy",
+        "alt_text": "Power Systems and Renewable Energy",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/belect/posyanreen.webp",
+        "id1": "1jL4XJDgsQ7nWw7buzIJYwLYD5hzqxLgT4ant8U3niAM",
+        "id2": "1yo59JBG3vGzLsG3DS_uS1IDyoKng8HOdGLaORcSydVk",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "belecttwc.html",
+        "topic_name": "Troubleshooting and Circuit Repair",
+        "alt_text": "Troubleshooting and Circuit Repair",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/belect/trancire.webp",
+        "id1": "1gi70ECqQfoFXbXPhkYJBZN6VE2ZmwhVt1jFr5v8kbKA",
+        "id2": "1cI444_UE_Xlgz4tyU-4c_Kr8IudqMyUtqlKSuAqAuZg",
+        "short_brief": "short brief"
+    }
+]

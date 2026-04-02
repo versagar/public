@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Sagar Verma",
+        "role": "Founder, Tutor and Prinicple Architect",
+        "about": "",
+        "image": "",
+        "courses": "Physics, Mathematics, Coding, Robotics, Electronics, 3D Modelling"
+    },
+
+        {
+        "name": "S. Noori",
+        "role": "STEM Trainer",
+        "about": "",
+        "image": "",
+        "courses": "Biology, Chemistry, Coding, Robotics"
+    },
+
+            {
+        "name": "Shahin Ahmed",
+        "role": "STEM Trainer",
+        "about": "",
+        "image": "",
+        "courses": "Computer Science, Coding, Robotics"
+    },
+
+            {
+        "name": "Ashutosh Pandey",
+        "role": "STEM Trainer",
+        "about": "",
+        "image": "",
+        "courses": "Physics, Electronics, 3D Modelling, Coding, Robotics"
+    },
+
+            {
+        "name": "Prince Tiwari",
+        "role": "STEM Trainer",
+        "about": "",
+        "image": "",
+        "courses": "Computer Science, Coding, Robotics"
+    }
+]

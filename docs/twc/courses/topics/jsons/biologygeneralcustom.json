@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "biologygeneralcustom.html",
+        "topic_name": "Customized Curriculum Introduction",
+        "alt_text": "Customized Curriculum Introduction",
+        "image_link": "/path-to-image/custom-curriculum.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Overview of personalized learning in Biology for NIOS, CBSE, ICSE, IB, or other boards."
+    },
+    {
+        "filename": "biologygeneralcustom.html",
+        "topic_name": "Primary to Advanced Topics Integration",
+        "alt_text": "Primary to Advanced Topics Integration",
+        "image_link": "/path-to-image/integration-topics.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Combining core topics from primary, middle, secondary, and advanced levels to meet student needs."
+    },
+    {
+        "filename": "biologygeneralcustom.html",
+        "topic_name": "Board-Specific Focus",
+        "alt_text": "Board-Specific Focus",
+        "image_link": "/path-to-image/board-specific.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Tailoring lessons for specific boards like CBSE, ICSE, IB, NIOS, or state boards."
+    },
+    {
+        "filename": "biologygeneralcustom.html",
+        "topic_name": "Project-Based Learning",
+        "alt_text": "Project-Based Learning",
+        "image_link": "/path-to-image/project-learning.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Encourage students to apply biology concepts through hands-on projects."
+    },
+    {
+        "filename": "biologygeneralcustom.html",
+        "topic_name": "Skill Integration",
+        "alt_text": "Skill Integration",
+        "image_link": "/path-to-image/skill-integration.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Develop problem-solving, critical thinking, and analytical skills in biology learning."
+    },
+    {
+        "filename": "biologygeneralcustom.html",
+        "topic_name": "Capstone Project",
+        "alt_text": "Capstone Project",
+        "image_link": "/path-to-image/capstone-project.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "A final personalized project combining all learned concepts for practical application."
+    }
+]

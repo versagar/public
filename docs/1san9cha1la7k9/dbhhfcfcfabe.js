@@ -4,9 +4,9 @@ document.addEventListener("keydown", event => {
         event.preventDefault()
     }
 });
-getBeauty("dtp");
-getBeauty("mbp");
-getBeauty("kpp");
+//getBeauty("dtp");
+//getBeauty("mbp");
+//getBeauty("kpp");
 // getBeauty("../dtp");
 // getBeauty("../mbp");
 // getBeauty("../kpp");
@@ -238,7 +238,7 @@ function loadhPagesuff(id, name, suff, dir) {
 
 function gslidetwc(id, gid) {
     // var twcloader = '<div id="twcloaderGif"></div>';
-    var oname = '<div id="ttgsidBox'+id+'" class="ttgsidbox"><iframe id="ttgsidFrame'+id+'" class="ttgsidframe" src="https://docs.google.com/presentation/d/' + gid + '/embed" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true";></iframe><div class="abs gslidestrip"></div></div>';
+    var oname = '<div id="ttgsidBox'+id+'" class="ttgsidbox"><iframe id="ttgsidFrame'+id+'" class="ttgsidframe" src="https://docs.google.com/presentation/d/' + gid + '/embed" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true";></iframe><div class="abs gslidestrip text-center text-primary bold text2" id="topicsHead"></div></div>';
     // document.getElementById(id).innerHTML = twcloader;
     document.getElementById(id).innerHTML = oname;
 }
@@ -482,15 +482,19 @@ function sortChildDivs(containerId) {
 
 function sortChildDivsByDate(containerId) {
   const container = document.getElementById(containerId);
-  const children = Array.from(container.children);
+  sortDateBox(container);
+}
 
-  children.sort((a, b) => {
+function sortDateBox(selectionBox) {
+  const items = Array.from(selectionBox.children);
+
+  items.sort((a, b) => {
     const dateA = a.value? new Date(a.value): new Date(a.textContent);
     const dateB = b.value? new Date(b.value): new Date(b.textContent);
     return dateA - dateB;
   });
 
-  children.forEach(child => container.appendChild(child));
+  items.forEach(el => selectionBox.appendChild(el));
 }
 
 function makeDraggable(element) {
@@ -793,4 +797,102 @@ function toggleDisplay(selector, displayType) {
       element.style.display = displayType;
     }
   }
+}
+
+function parseCSVLine(line) {
+  const result = [];
+  let current = '';
+  let insideQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+
+    if (char === '"' && (i === 0 || line[i - 1] !== '\\')) {
+      insideQuotes = !insideQuotes;
+      continue;
+    }
+
+    if (char === ',' && !insideQuotes) {
+      result.push(current.trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+
+  result.push(current.trim());
+  return result;
+}
+
+async function resizeImageFromUrl(imageUrl, maxWidth) {
+// Fetch image as blob
+  const response = await fetch(imageUrl);
+  if (!response.ok) throw new Error("Failed to fetch image");
+  const blob = await response.blob();
+
+  // Load image
+  const img = await new Promise((resolve, reject) => {
+    const image = new Image();
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      image.src = reader.result; // base64, avoids blob URL
+    };
+    reader.onerror = () => reject(new Error("Failed to read blob"));
+
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error("Image load failed"));
+
+    reader.readAsDataURL(blob);
+  });
+
+  // If no resize needed, return original blob
+  if (img.width <= maxWidth) return blob;
+
+  // Resize with canvas
+  const scale = maxWidth / img.width;
+  const canvas = document.createElement("canvas");
+  canvas.width = maxWidth;
+  canvas.height = img.height * scale;
+  const ctx = canvas.getContext("2d");
+  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+  // Convert canvas to Blob
+  return await new Promise((resolve, reject) => {
+    canvas.toBlob(
+      (resizedBlob) => {
+        if (!resizedBlob) reject(new Error("Resize failed"));
+        else resolve(resizedBlob);
+      },
+      blob.type || "image/jpeg",
+      0.8 // compression
+    );
+  });
+}
+function convertToBase64(fileOrBlob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+
+    reader.readAsDataURL(fileOrBlob);
+  });
+}
+
+async function imageUrlToBase64(imageUrl) {
+  const response = await fetch(imageUrl);
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch image");
+  }
+
+  const blob = await response.blob();
+
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
 }

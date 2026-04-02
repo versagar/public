@@ -1,0 +1,83 @@
+[
+    {
+        "filename": "mroboticstwc.html",
+        "topic_name": "Introduction to Robotics",
+        "alt_text": "Introduction to Robotics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/mrobotics/intoro.webp",
+        "id1": "1hhFdRoOEcWFzLXB3LT6eRCKIX8tHfSQGc2b7ps3gyOQ",
+        "id2": "1_oeNFHGfTNpfz2U4gN1M9AlhUWyhRqABn1RP4p6Qt10",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "mroboticstwc.html",
+        "topic_name": "Simple Machines & Mechanisms",
+        "alt_text": "Simple Machines & Mechanisms",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/mrobotics/simame.webp",
+        "id1": "15GXwKD9PGgFFN6JhL121yxqxMQbH_ek1fzNdM-98TN0",
+        "id2": "1um2v0okL2eYy-2YTiFr9Bspcn6Z9x5NrAhCJZZsN8Ts",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "mroboticstwc.html",
+        "topic_name": "Basic Mechanical Components",
+        "alt_text": "Basic Mechanical Components",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/mrobotics/bameco.webp",
+        "id1": "14aq3eC-RWpjRnR_Z1s4nvoZGoMewEVghwhtBbRb3UVc",
+        "id2": "1VVgyWzZsNvaJdFCQfjmrHufbP9676r5INc3VgkVh_KQ",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "mroboticstwc.html",
+        "topic_name": "Building Basic Mechanical Projects",
+        "alt_text": "Building Basic Mechanical Projects",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/mrobotics/bubamepr.webp",
+        "id1": "1h3DeAbn-mmp_ocZQqt_SJGYFYnYCnOjpTPXLnEONxXg",
+        "id2": "1VoNxoZ_jNROOabIgkARF_QNBTlZZi9uDFnw5W2VAfvk",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "mroboticstwc.html",
+        "topic_name": "Mechanical Linkages and Arm Systems",
+        "alt_text": "Mechanical Linkages and Arm Systems",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/mrobotics/melianarsy.webp",
+        "id1": "1hFU6DBL1tPoVjh-UR5g7u_DrS-dncFEOQej0tpVadoc",
+        "id2": "1PMdbz9TajB7rOGp_GsghMik8xGFH5sgHItywixmVqEk",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "mroboticstwc.html",
+        "topic_name": "Advanced Mechanisms in Robotics",
+        "alt_text": "Advanced Mechanisms in Robotics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/mrobotics/admeinro.webp",
+        "id1": "1npjomwkuhNp31a42C5UQhx_Ipuu6WwMgXWPYaRj9yEo",
+        "id2": "1Sn_s69dDLmeoJ7LcI8otyYkNb1l5Xgg8WrGmlXr_Vbg",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "mroboticstwc.html",
+        "topic_name": "Robotics in Real Life",
+        "alt_text": "Robotics in Real Life",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/mrobotics/roinreli.webp",
+        "id1": "1CV9lIbyaqAD4OEnQTs9XAm6MfR7UzBNm8ft3njrfF18",
+        "id2": "1NQIZuUjmyR7-zVCxJEPky5ch1fcye3uzYoJ1fgqwbRo",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "mroboticstwc.html",
+        "topic_name": "Robotic Locomotion",
+        "alt_text": "Robotic Locomotion",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/mrobotics/rolo.webp",
+        "id1": "1LIoMUchyUhFlswJq-Q0AO_BSEIAAbn5TU1McSbtZUQI",
+        "id2": "1NTvJCHTx5NRwPLT_aP4KubJeWmqIvo7SKRXTPQ63JYQ",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "mroboticstwc.html",
+        "topic_name": "Advanced Mechanical Projects",
+        "alt_text": "Advanced Mechanical Projects",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/mrobotics/admepr.webp",
+        "id1": "19biH9IZUGYacnDFJFhLThTgjIyAp-87_GPh8-IV_5dY",
+        "id2": "1Epm0eL4UybPL3KM1DO269ZsR0s4y8gbk7iY3BJIqvoY",
+        "short_brief": "short brief"
+    }
+]

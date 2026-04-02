@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "mlbasictwc.html",
+        "topic_name": "Introduction to Machine Learning",
+        "alt_text": "Introduction to Machine Learning",
+        "image_link": "/path-to-image/ml-intro.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn what machine learning is, its applications, and types of learning."
+    },
+    {
+        "filename": "mlbasictwc.html",
+        "topic_name": "Data Collection and Preprocessing",
+        "alt_text": "Data Collection and Preprocessing",
+        "image_link": "/path-to-image/data-preprocessing.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn to gather data and clean it for machine learning models."
+    },
+    {
+        "filename": "mlbasictwc.html",
+        "topic_name": "Exploratory Data Analysis",
+        "alt_text": "Exploratory Data Analysis",
+        "image_link": "/path-to-image/data-analysis.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Analyze and visualize datasets to extract insights and patterns."
+    },
+    {
+        "filename": "mlbasictwc.html",
+        "topic_name": "Introduction to Supervised Learning",
+        "alt_text": "Introduction to Supervised Learning",
+        "image_link": "/path-to-image/supervised-learning.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand supervised learning, regression, and classification tasks."
+    },
+    {
+        "filename": "mlbasictwc.html",
+        "topic_name": "Introduction to Unsupervised Learning",
+        "alt_text": "Introduction to Unsupervised Learning",
+        "image_link": "/path-to-image/unsupervised-learning.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn about clustering and dimensionality reduction in unsupervised learning."
+    },
+    {
+        "filename": "mlbasictwc.html",
+        "topic_name": "Project: Predictive Models",
+        "alt_text": "Project: Predictive Models",
+        "image_link": "/path-to-image/ml-project-basic.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Build a simple machine learning project to predict outcomes from data."
+    }
+]

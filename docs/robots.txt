@@ -1,0 +1,6 @@
+User-agent: *
+# Disallow: /other-pages/*
+# Disallow: /private/*
+# Disallow: /twc/courses/topics/*
+Disallow: /*.html$
+Allow: /*index.html$

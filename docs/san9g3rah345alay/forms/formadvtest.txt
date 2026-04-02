@@ -1,0 +1,7 @@
+name,label,type,placeholder,required,options,min,max,pattern
+username,Username,text,Enter username,r,,,
+email,Email,email,you@example.com,r,,,
+age,Age,number,,nr,,18,120,
+bio,Bio,textarea,About you,nr,,,
+gender,Gender,select,,r,"Male|Female|Other",,,
+terms,Accept Terms,checkbox,,r,,,

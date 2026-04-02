@@ -1,0 +1,128 @@
+[
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Introduction to Linux",
+        "alt_text": "Introduction to Linux",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/intoli.webp",
+        "id1": "1UktLee1AJUFDoxENxaMdpLTQVOl4tHtu873XbDEy3yM",
+        "id2": "1M7DOUPUSL4GMMDtTIq9eHDPMVfO5HQS84CIoA3XmS98",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Linux Architecture and Components",
+        "alt_text": "Linux Architecture and Components",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/liaranco.webp",
+        "id1": "1aZ_VWsurOUBOrLO89aiB4u8UoUHe_CFeb-aP2x1Y0Lw",
+        "id2": "1d6Q_CARDSi-8CVcGX8b-f34h4tYRY4FjQVn8ANY2FG0",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Basic Linux Commands and Navigation",
+        "alt_text": "Basic Linux Commands and Navigation",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/balicoanna.webp",
+        "id1": "1eV5h0_Cr5T3TgIWxy-BzX_lObUQb5TjX54aD3MzcaqM",
+        "id2": "1iWnkCzMJRurmK3VYoOuKNw52vMbsm1N5EkdkznPrqJU",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Linux File System and Permissions",
+        "alt_text": "Linux File System and Permissions",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/lifisyanpe.webp",
+        "id1": "1a-uk1a84i_CqXbz_0YzoM4m8Yx4VUfndaJWEpQc-wxE",
+        "id2": "1pR5b5Vt1bUEqjIhdxMWPnvaKfAEwuA7b6PNCeeyuknc",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "User and Group Management",
+        "alt_text": "User and Group Management",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/usangrma.webp",
+        "id1": "1wadSZBElZmwKkp9FTRMT2wP4pnZtVgoVgHXPjdo6gy0",
+        "id2": "19LLkf4sWzo8tVRRasfkZ7iEa07QK-HrBwRMEDft-FhI",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Text Editors in Linux",
+        "alt_text": "Text Editors in Linux",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/teedinli.webp",
+        "id1": "1nKdYidcUIAYWrCZig-8AqWQTaLNComNHpJu2uUuS0Ic",
+        "id2": "18QDiLzcXdc4FCX4O7ITd20ns8jkqO6z1raM_cx45Ijo",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Linux System Administration Basics",
+        "alt_text": "Linux System Administration Basics",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/lisyadba.webp",
+        "id1": "1BTBAlg-ewqqmK6wqZAZ3lpOsFl_CUjsTuaVaMt2ha6k",
+        "id2": "16b17jBaAedu1EDhW15VjnWZuRcT3Tb2LObyQ2GLBMYw",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Linux Networking",
+        "alt_text": "Linux Networking",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/line.webp",
+        "id1": "1S4wRFnlzrniQ8-MRiZlFXxpMehYV6c7WfZpdFbE4R9Y",
+        "id2": "1VATRiKbJhOtCbLeSZza-5E6rOdiFfcQzDgAEA38MHNA",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Linux Disk Management",
+        "alt_text": "Linux Disk Management",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/lidima.webp",
+        "id1": "1AS9AdfqBXFEBiCwMZ8GXoPV5qdBqAbkBBhkBXZlJlr8",
+        "id2": "1fCh4xaQcr8ZE9ppfNv_BvNqmb0D4EaqIVZ4EQvJPNGI",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Linux Process Management",
+        "alt_text": "Linux Process Management",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/liprma.webp",
+        "id1": "1HRZOIGVMj68hnWjGAB9Vj8pFnb3T7LPL9R4Uv-IsIB4",
+        "id2": "12FMrL5-e8hvVW-6_lSW8qhsT8adQTGBwaRoTXqCTJ58",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Linux Security Essentials",
+        "alt_text": "Linux Security Essentials",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/lisees.webp",
+        "id1": "1VMU-D0WgnNgMc_1zWg_H59c8otqZ1uW3tm_v4-oXD1g",
+        "id2": "1wU565WsIWFlWOHiFoDgwUdEDgl9ViLEkGJzthDYBaFM",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Advanced Linux Tools",
+        "alt_text": "Advanced Linux Tools",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/adlito.webp",
+        "id1": "1208v2RuIzygCmNn_NRt06l5eavACfvjv9nMdw9NGpN0",
+        "id2": "1XuNtLn7fOD-mm9DONSDjZNNUUsf-6ONbsarC1BzLz-g",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Linux Kernel, Boot Process, and Bootloaders",
+        "alt_text": "Linux Kernel, Boot Process, and Bootloaders",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/likebopranbo.webp",
+        "id1": "141BxudOxsKPwRNat_fZnYHf1IBLYhtvyFnVFmM7pOSA",
+        "id2": "1NGRtOHpPy0Wl9e69PN6lBF6YRopqCH4uW7OQibA_7iQ",
+        "short_brief": "short brief"
+    },
+    {
+        "filename": "linuxtwc.html",
+        "topic_name": "Linux Troubleshooting and Repair",
+        "alt_text": "Linux Troubleshooting and Repair",
+        "image_link": "/san9g3rah345alay/tas3w34ee89r/courses/courses-head/linux/litranre.webp",
+        "id1": "1ra6XAtpJ4BZ5T0SjNRQ99degua1oJue0iORhunOvhk8",
+        "id2": "1KyusmXo1FDGYWi1HOLe_LwF2q8Jx9jPlV68sFEmamZM",
+        "short_brief": "short brief"
+    }
+]

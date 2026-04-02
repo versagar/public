@@ -1,0 +1,4 @@
+name,label,type,placeholder,required,options,lclasses,iclasses,min,max,pattern
+name, Name, text, Your name here,r,,,,
+contact_no, Contact No.,text, Enter Contact Details, r,
+availability, Available Timings,text, e.g. weekdays 2pm to 4pm,r

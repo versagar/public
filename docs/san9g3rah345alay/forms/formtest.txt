@@ -1,0 +1,6 @@
+name,label,placeholder,nr (First line is heading)
+name,Full Name,"placeholder"
+email,Email Address,
+phone,"Mobile Number, including country code",,nr
+company,Company Name,,nr
+notes,"Additional Notes, optional",,

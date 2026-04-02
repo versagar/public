@@ -1,0 +1,56 @@
+[
+    {
+        "filename": "biologyprimarymiddle.html",
+        "topic_name": "Introduction to Biology",
+        "alt_text": "Introduction to Biology",
+        "image_link": "/path-to-image/bio-intro.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Understand what biology is, its importance, and the diversity of life."
+    },
+    {
+        "filename": "biologyprimarymiddle.html",
+        "topic_name": "Cell Basics",
+        "alt_text": "Cell Basics",
+        "image_link": "/path-to-image/cell-basics.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn about plant and animal cells, their structures, and functions."
+    },
+    {
+        "filename": "biologyprimarymiddle.html",
+        "topic_name": "Plant Life",
+        "alt_text": "Plant Life",
+        "image_link": "/path-to-image/plant-life.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Study plant parts, photosynthesis, and growth basics."
+    },
+    {
+        "filename": "biologyprimarymiddle.html",
+        "topic_name": "Animal Life",
+        "alt_text": "Animal Life",
+        "image_link": "/path-to-image/animal-life.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Introduction to common animals, their classification, and habitats."
+    },
+    {
+        "filename": "biologyprimarymiddle.html",
+        "topic_name": "Human Body Basics",
+        "alt_text": "Human Body Basics",
+        "image_link": "/path-to-image/human-body-basics.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Overview of human body systems for young learners."
+    },
+    {
+        "filename": "biologyprimarymiddle.html",
+        "topic_name": "Ecosystem Introduction",
+        "alt_text": "Ecosystem Introduction",
+        "image_link": "/path-to-image/ecosystem-intro.webp",
+        "id1": "",
+        "id2": "",
+        "short_brief": "Learn about food chains, habitats, and interactions in nature."
+    }
+]
