@@ -3,6 +3,7 @@
 // Added event listener for body onload
 window.addEventListener('load', async function() { await loadIn('loadedBody','page.html'); 
     console.log('page loaded');
+    await visitorTask()
   //  await loadScript('/returns.js');
    // console.log('returns js');
 await loadScript('/twc/connect/diary/connector.js');
@@ -343,3 +344,118 @@ Object.assign(overlay.style, {
   document.body.appendChild(overlay);
   document.body.appendChild(pop);
 }
+
+
+
+
+
+
+
+// Visitors ---
+
+async function visitorTask() {
+
+  const ENDPOINT = "https://twc.physer.workers.dev";
+  const LAST_URL_KEY = "physer_last_url";
+  const SEEN_KEY = "physer_notice_seen";
+
+  // --- Notice UI (clean + lightweight) ---
+  function createNotice() {
+    const el = document.createElement("div");
+    el.className = "pad2 round2 bg-white shadow2 text-center";
+
+    el.innerHTML = `
+      <p class="text1 text-primary pad1 center text-center round1">
+        We use minimal usage data to improve your experience.
+      </p>
+      <p class="text-accent mt1 bold">✓ Lightweight • ✓ Private • ✓ No tracking abuse</p>
+      <i>Click outside to continue</i>
+    `;
+
+    return el;
+  }
+
+  // --- Data ---
+function getData() {
+  return {
+    function: "trackVisit",
+
+    formData: {
+      timestamp: new Date().toISOString(),
+      url: location.pathname + location.search,
+      title: document.title,
+      referrer: document.referrer || "direct"
+    },
+
+    userDetails: {
+      ua: navigator.userAgent,
+      lang: navigator.language,
+      screen: window.innerWidth + "x" + window.innerHeight,
+      time: new Date().toISOString()
+    },
+
+    extra: {
+      host: location.hostname
+    }
+  };
+}
+
+  function send() {
+    const data = getData();
+
+    if (localStorage.getItem(LAST_URL_KEY) === data.url) return;
+    localStorage.setItem(LAST_URL_KEY, data.url);
+
+    try {
+      navigator.sendBeacon(ENDPOINT, JSON.stringify(data));
+    } catch {
+      fetch(ENDPOINT, {
+        method: "POST",
+        body: JSON.stringify(data),
+        keepalive: true
+      });
+    }
+  }
+
+  // --- SPA Tracking ---
+  function hookNavigation() {
+    const trigger = () => send();
+
+    const push = history.pushState;
+    history.pushState = function () {
+      push.apply(this, arguments);
+      trigger();
+    };
+
+    const replace = history.replaceState;
+    history.replaceState = function () {
+      replace.apply(this, arguments);
+      trigger();
+    };
+
+    window.addEventListener("popstate", trigger);
+  }
+
+  function initTracking() {
+    send();
+    hookNavigation();
+  }
+
+  // --- Init ---
+  function init() {
+
+    if (!localStorage.getItem(SEEN_KEY)) {
+      openPop(createNotice()); // bottom center
+
+      // mark seen immediately (no button dependency)
+      localStorage.setItem(SEEN_KEY, "1");
+    }
+
+    initTracking();
+  }
+
+  document.readyState === "loading"
+    ? document.addEventListener("DOMContentLoaded", init)
+    : init();
+
+};

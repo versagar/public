@@ -16,19 +16,21 @@ loadTWCForm('regForm','registrationform').then(() => {
 
 
 
-async function submitRegistrationForm(form) {
+async function addTimestampAndSubmit(form, func) {
 
-  // Add timestamp
+  // ✅ Create timestamp
   const timestamp = getIndianDateTime(new Date());
 
-  const formData = new FormData(form);
+  // ✅ Convert form → object
+  const formObj = Object.fromEntries(new FormData(form).entries());
 
-  // ✅ Add timestamp into formData
-  formData.append("timestamp", timestamp);
-
+  // ✅ Prepend timestamp
   const payload = {
-    function: "register",
-    formData: Object.fromEntries(formData.entries()),
+    function: func,
+    formData: {
+      timestamp,
+      ...formObj
+    },
     userDetails: {
       ua: navigator.userAgent,
       time: new Date().toISOString()
@@ -38,9 +40,9 @@ async function submitRegistrationForm(form) {
 
   // --- Show Submitting Popup ---
   openPop(`
-    <div style="text-align:center; min-width:250px;">
-      <div style="font-size:2rem;">⏳</div>
-      <p style="margin-top:10px; font-weight:600;">Submitting your enrollment...</p>
+    <div class="flex-center flex-column pad1 round1">
+      <div class="bold">⏳</div>
+      <p class="mt1 bold">Submitting...</p>
     </div>
   `);
 
@@ -63,12 +65,14 @@ async function submitRegistrationForm(form) {
       successBox.style.minWidth = "260px";
 
       successBox.innerHTML = `
-        <div style="font-size:3rem;">🎉</div>
-        <h3 style="margin:10px 0;">Registration Successful!</h3>
-        <p style="font-size:0.95rem;">
-          Thank you for registering.<br>
-          Our team will contact you shortly.
-        </p>
+        <div class="flex-column flex-center pad1 gap1 round2 bg-white">
+          <div>🎉</div>
+          <h2 class="mt1 mb1 center">Callback Request Submitted!</h2>
+          <p>
+            Thank you for this move.<br>
+            Our team will contact you shortly.
+          </p>
+        </div>
       `;
 
       openPop(successBox);
@@ -90,7 +94,6 @@ async function submitRegistrationForm(form) {
     `);
 
   }
-
 }
 
 
@@ -99,6 +102,6 @@ async function submitRegistrationForm(form) {
   if (form) {
     form.addEventListener("submit", async function(e) {
       e.preventDefault();
-      await submitRegistrationForm(form);
+      await addTimestampAndSubmit(form, 'register');
     });
   }
